@@ -57,11 +57,11 @@ const services = [
 
 const technologies = [
 	{
-		name: 'HTML 5',
+		name: 'HTML5',
 		icon: html,
 	},
 	{
-		name: 'CSS 3',
+		name: 'CSS3',
 		icon: css,
 	},
 	{
@@ -73,19 +73,19 @@ const technologies = [
 		icon: typescript,
 	},
 	{
-		name: 'React JS',
+		name: 'React',
 		icon: reactjs,
 	},
 	{
-		name: 'Redux Toolkit',
+		name: 'Redux',
 		icon: redux,
 	},
 	{
-		name: 'Tailwind CSS',
+		name: 'TailwindCSS',
 		icon: tailwind,
 	},
 	{
-		name: 'Node JS',
+		name: 'NodeJS',
 		icon: nodejs,
 	},
 	{
@@ -93,7 +93,7 @@ const technologies = [
 		icon: mongodb,
 	},
 	{
-		name: 'Three JS',
+		name: 'ThreeJS',
 		icon: threejs,
 	},
 	{
@@ -112,50 +112,47 @@ const technologies = [
 
 const experiences = [
 	{
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
+		title: 'Freelancer Web Developer',
+		company_name: 'Freelance',
 		icon: starbucks,
 		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
+		date: 'January 2021 - September 2021',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Developing and maintaining websites using JavaScript, HTML5, CSS3, SASS and other related technologies.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2021 - Feb 2022',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
 	},
 	{
 		title: 'Web Developer',
-		company_name: 'Shopify',
+		company_name: 'Doctor At Work',
+		icon: tesla,
+		iconBg: '#E6DEDD',
+		date: 'September 2021 - February 2022',
+		points: [
+			'Developing and maintaining websites using JavaScript, HTML5, CSS3, SCSS, Canvas and other related technologies.',
+			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Implementing responsive design and ensuring cross-browser compatibility.',
+		],
+	},
+	{
+		title: 'Frontend Developer',
+		company_name: 'Doctor At Work',
 		icon: shopify,
 		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
+		date: 'February 2022 - Present',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
+			'Developing and maintaining web applications using React, Astro, Qwik, TailwindCSS and other related technologies.',
 			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
 			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
 	},
 	{
-		title: 'Full stack Developer',
+		title: 'Fullstack Developer',
 		company_name: 'Meta',
 		icon: meta,
 		iconBg: '#E6DEDD',
-		date: 'Jan 2023 - Present',
+		date: 'Present - Future',
 		points: [
 			'Developing and maintaining web applications using React.js and other related technologies.',
 			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
