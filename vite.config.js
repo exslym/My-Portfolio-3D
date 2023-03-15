@@ -5,5 +5,5 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [react()],
 	site: 'https://exslym.github.io',
-	base: '/portfolio-3D',
+	base: '/My-Portfolio-3D',
 });
