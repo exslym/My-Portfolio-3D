@@ -17,6 +17,8 @@
 	margin-top: -100px;
 	padding-bottom: 100px;
 	display: block;
+	position: relative;
+	z-index: -1;
 }
 
 .black-gradient {

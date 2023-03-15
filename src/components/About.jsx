@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Tilt from 'react-tilt';
 import { services } from '../constants';
+import { SectionWrapper } from '../hoc';
 import { styles } from '../styles/';
 import { fadeIn, textVariant } from '../utils/motion';
 
@@ -56,4 +57,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
