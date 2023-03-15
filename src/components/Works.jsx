@@ -15,10 +15,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 					scale: 1,
 					speed: 450,
 				}}
-				className='bg-tertiary p-5 rounded-2xl sm:max-w-[360px] w-full'
+				className='bg-tertiary p-5 rounded-2xl sm:max-w-[360px] h-full w-full'
 			>
-				<div className='relative w-full h-[230px] rounded-2xl '>
-					<img src={image} alt={name} className='w-full h-full rounded-2xl object-cover' />
+				<div className='relative w-full  rounded-2xl '>
+					<img
+						src={image}
+						alt={name}
+						className='w-full h-full sm:max-h-[230px] rounded-2xl object-cover'
+					/>
 					<div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
 						<div
 							onClick={() => window.open(website_link, '_blank')}
@@ -72,7 +76,7 @@ const Works = () => {
 				</motion.p>
 			</div>
 
-			<div className='mt-20 flex flex-wrap gap-9'>
+			<div className='mt-20 flex items-stretch flex-wrap gap-9'>
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
 				))}
