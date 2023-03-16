@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<section className='relative w-full h-screen  mx-auto'>
 			<div
-				className={`${styles.paddingX} absolute z-10 inset-0 lg:top-[100px] md:top-[90px] xs:top-[90px] top-[100px] max-w-7xl mx-auto flex felx-row items-start gap-5`}
+				className={`${styles.paddingX} absolute inset-0 lg:top-[100px] md:top-[90px] xs:top-[90px] top-[100px] max-w-7xl mx-auto flex felx-row items-start gap-5`}
 			>
 				<div
 					className='flex flex-col justify-center items-center 
@@ -21,11 +21,11 @@ const Hero = () => {
 					<div className='lg:w-1 md:w-[3px] sm:w-[3px] w-[2px] lg:h-80 sm:h-60 xs:h-60 h-40 blue-gradient ' />
 				</div>
 				<div>
-					<h1 className={`${styles.heroHeadText} text-white `}>
+					<h1 className={`${styles.heroHeadText} text-white relative z-10`}>
 						Hi, I'm <span className='text-clr_blue'>Andrei</span>
 					</h1>
 					<p
-						className={`${styles.heroSubText} mt-2 text-white-100 md:max-w-[640px] max-w-[460px] `}
+						className={`${styles.heroSubText} relative z-10 mt-2 text-white-100 md:max-w-[640px] max-w-[460px] `}
 					>
 						I'm a Frontend Developer, <br />I also develop 3D visuals, user interfaces and&nbsp;web
 						applications.
