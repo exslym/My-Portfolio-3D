@@ -20,10 +20,8 @@ npm run dev
 npm run build
 ```
 
-### Deployment on GitHub Pages (Optional)
+### Deployment on GitHub Pages
 
 ```
 npm run deploy
 ```
-
-This adds gh-pages branch to your project github repository, deploys built project there, hosts the site via GitHub Pages.
