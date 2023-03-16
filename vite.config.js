@@ -74,13 +74,15 @@ export default defineConfig({
 	],
 	site: 'https://exslym.github.io',
 	base: '/My-Portfolio-3D',
+	// site: 'https://01dev.ru',
+	// base: '/',
 	build: {
 		emptyOutDir: true,
 		outDir: path.resolve(__dirname, './build'),
 	},
-	// server: {
-	// 	port: 3000,
-	// 	host: '0.0.0.0',
-	// 	hmr: true,
-	// },
+	server: {
+		hmr: true,
+		port: 5173,
+		host: '0.0.0.0',
+	},
 });
