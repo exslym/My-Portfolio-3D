@@ -9,7 +9,8 @@ const DEFAULT_OPTIONS = {
 	test: /\.(jpe?g|png|tiff|webp|svg|avif)$/i,
 	exclude: undefined,
 	include: undefined,
-	includePublic: true,
+	excludePublic: ['public/**/*'],
+	includePublic: false, //* 3D-models in public with lossless quality
 	logStats: true,
 	svg: {
 		multipass: true,
@@ -39,12 +40,13 @@ const DEFAULT_OPTIONS = {
 	},
 	png: {
 		quality: 100,
+		palette: true,
 	},
 	jpeg: {
-		quality: 90,
+		quality: 95,
 	},
 	jpg: {
-		quality: 90,
+		quality: 95,
 	},
 	tiff: {
 		quality: 100,
