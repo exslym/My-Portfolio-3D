@@ -14,11 +14,18 @@
 }
 
 .hash-span {
-	margin-top: -100px;
-	padding-bottom: 100px;
+	margin-top: -80px;
+	padding-bottom: 50px;
 	display: block;
 	position: relative;
 	z-index: -1;
+}
+
+.input_error input::-webkit-input-placeholder {
+	color: rgba(255, 75, 75, 0.8);
+}
+.input_error textarea::-webkit-input-placeholder {
+	color: rgba(255, 75, 75, 0.8);
 }
 
 .black-gradient {
@@ -30,7 +37,18 @@
 		#000000
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+.menu-gradient {
+	color: #103d56;
+	background: transparent;
+	background: linear-gradient(to top, transparent 0%, #90a1b0 45%);
+	background: -webkit-linear-gradient(to top, transparent 0%, #90a1b0 45%);
+}
+.transp-gradient {
+	color: #103d56;
+	background: transparent;
+	background: linear-gradient(90deg, #090b18 5%, transparent 90%);
+	background: -webkit-linear-gradient(-90.13deg, #090b18 5%, transparent 90%);
+}
 .violet-gradient {
 	background: #804dee;
 	background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -99,15 +117,37 @@
 }
 
 /* canvas- styles */
-.canvas-loader {
-	font-size: 10px;
+.canvas-loader-container {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	min-width: 60px;
+	left: 0;
+	transform: translate(-42%, 0%);
+}
+.canvas-loader-spinner {
+	margin: 0 auto;
+	font-size: 14px;
 	width: 1em;
 	height: 1em;
 	border-radius: 50%;
-	position: relative;
 	text-indent: -9999em;
 	animation: mulShdSpin 1.1s infinite ease;
 	transform: translateZ(0);
+}
+
+.canvas-loader-procent {
+	margin: 0 auto;
+	margin-top: 50px;
+	font-size: 1em;
+	font-weight: 800;
+	color: '#f1f1f1';
+	font-feature-settings: 'ordn' on;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	text-align: center;
 }
 
 @keyframes mulShdSpin {

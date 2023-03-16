@@ -1,28 +1,25 @@
 import {
-	backend,
-	carrent,
+	astro,
+	cns_portfolio,
 	creator,
 	css,
-	docker,
-	figma,
+	dcreative,
+	doctoratwork,
+	doctoratwork1,
+	freelance,
 	git,
 	html,
 	javascript,
-	jobit,
-	meta,
 	mobile,
-	mongodb,
-	nodejs,
+	qwik,
 	reactjs,
-	redux,
-	shopify,
-	starbucks,
+	space_invaders,
 	tailwind,
-	tesla,
 	threejs,
-	tripguide,
 	typescript,
+	vite,
 	web,
+	webpack,
 } from '../assets';
 
 export const navLinks = [
@@ -31,8 +28,8 @@ export const navLinks = [
 		title: 'About',
 	},
 	{
-		id: 'work',
-		title: 'Work',
+		id: 'projects',
+		title: 'Projects',
 	},
 	{
 		id: 'contact',
@@ -57,14 +54,6 @@ const services = [
 
 const technologies = [
 	{
-		name: 'HTML5',
-		icon: html,
-	},
-	{
-		name: 'CSS3',
-		icon: css,
-	},
-	{
 		name: 'JavaScript',
 		icon: javascript,
 	},
@@ -77,36 +66,40 @@ const technologies = [
 		icon: reactjs,
 	},
 	{
-		name: 'Redux',
-		icon: redux,
-	},
-	{
-		name: 'TailwindCSS',
-		icon: tailwind,
-	},
-	{
-		name: 'NodeJS',
-		icon: nodejs,
-	},
-	{
-		name: 'MongoDB',
-		icon: mongodb,
-	},
-	{
 		name: 'ThreeJS',
 		icon: threejs,
+	},
+	{
+		name: 'Qwik',
+		icon: qwik,
+	},
+	{
+		name: 'Astro',
+		icon: astro,
+	},
+	{
+		name: 'HTML5',
+		icon: html,
+	},
+	{
+		name: 'CSS3',
+		icon: css,
+	},
+	{
+		name: 'Tailwind',
+		icon: tailwind,
 	},
 	{
 		name: 'git',
 		icon: git,
 	},
 	{
-		name: 'figma',
-		icon: figma,
+		name: 'Webpack',
+		icon: webpack,
 	},
 	{
-		name: 'docker',
-		icon: docker,
+		name: 'Vite',
+		icon: vite,
 	},
 ];
 
@@ -114,7 +107,7 @@ const experiences = [
 	{
 		title: 'Freelancer Web Developer',
 		company_name: 'Freelance',
-		icon: starbucks,
+		icon: freelance,
 		iconBg: '#383E56',
 		date: 'January 2021 - September 2021',
 		points: [
@@ -125,7 +118,7 @@ const experiences = [
 	{
 		title: 'Web Developer',
 		company_name: 'Doctor At Work',
-		icon: tesla,
+		icon: doctoratwork,
 		iconBg: '#E6DEDD',
 		date: 'September 2021 - February 2022',
 		points: [
@@ -137,24 +130,11 @@ const experiences = [
 	{
 		title: 'Frontend Developer',
 		company_name: 'Doctor At Work',
-		icon: shopify,
+		icon: doctoratwork1,
 		iconBg: '#383E56',
 		date: 'February 2022 - Present',
 		points: [
 			'Developing and maintaining web applications using React, Astro, Qwik, TailwindCSS and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'Fullstack Developer',
-		company_name: 'Meta',
-		icon: meta,
-		iconBg: '#E6DEDD',
-		date: 'Present - Future',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
 			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
 			'Participating in code reviews and providing constructive feedback to other developers.',
@@ -191,38 +171,16 @@ const testimonials = [
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'D-Creative Studio',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
 		tags: [
 			{
-				name: 'react',
+				name: 'javascript',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'mongodb',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'tailwind',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
-		website_link: '#',
-	},
-	{
-		name: 'Job IT',
-		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-		tags: [
-			{
-				name: 'react',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'restapi',
+				name: 'animate-on-scroll',
 				color: 'green-text-gradient',
 			},
 			{
@@ -230,31 +188,54 @@ const projects = [
 				color: 'pink-text-gradient',
 			},
 		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
-		website_link: '#',
+		image: dcreative,
+		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
+		website_link: 'https://exslym.github.io/D-Creative-Studio/',
 	},
 	{
-		name: 'Trip Guide',
+		name: 'Space Invaders [Game]',
 		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+			'Web-based legendary classic arcade game Space Invaders made with JavaScript and Canvas with its iconic pixel graphics and addictive gameplay with mobile adaptivity and touch controls.',
 		tags: [
 			{
-				name: 'nextjs',
+				name: 'javascript',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'canvas',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'css',
+				name: 'scss',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
-		website_link: '#',
+		image: space_invaders,
+		source_code_link: 'https://github.com/exslym/Space-Invaders_GAME/',
+		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
+	},
+
+	{
+		name: 'CNS-Portfolio',
+		description:
+			"The multi-page website with interactive educational question-answer quiz for physicians that helps to learn about treatment options and appropriate drug prescribing based on patient's history and various health conditions.",
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'multipage',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: cns_portfolio,
+		source_code_link: 'https://github.com/exslym/CNS-Portfolio/',
+		website_link: 'https://exslym.github.io/CNS-Portfolio/',
 	},
 ];
 

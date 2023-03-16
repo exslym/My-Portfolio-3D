@@ -14,7 +14,7 @@ const EarthCanvas = () => {
 			frameloop='demand'
 			shadows
 			camera={{
-				fov: 45,
+				fov: 35,
 				near: 0.1,
 				far: 200,
 				position: [-4, 3, 6],
@@ -30,6 +30,7 @@ const EarthCanvas = () => {
 				/>
 				<Earth />
 			</Suspense>
+			<Preload all />
 		</Canvas>
 	);
 };
