@@ -2,9 +2,26 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useEffect, useState } from 'react';
 import CanvasLoader from '../Loader';
+// import * as THREE from 'three';
 
 const Computers = ({ isMobile }) => {
 	const computer = useGLTF('./desktop_pc/scene.gltf');
+
+	// const renderer = new THREE.WebGLRenderer();
+	// const speed = 0.01; // Change this value to adjust the speed of the animation
+	// let direction = 1;
+	// function animate() {
+	// 	requestAnimationFrame(animate);
+	// 	computer.rotation.x += speed;
+	// 	computer.rotation.y += speed;
+	// 	computer.position.z += speed * direction;
+	// 	if (computer.position.z > 5 || computer.position.z < -5) {
+	// 		direction = -direction;
+	// 	}
+	// 	renderer.render(computer);
+	// }
+	// animate();
+
 	return (
 		<mesh>
 			<hemisphereLight intensity={0.15} groundColor='black' />
@@ -19,9 +36,9 @@ const Computers = ({ isMobile }) => {
 			/>
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.5 : 0.75}
-				position={isMobile ? [0, -1.5, -1.5] : [0, -3.25, -1.5]}
-				rotation={[-0.01, -0.2, -0.1]}
+				scale={isMobile ? 0.65 : 0.75}
+				position={isMobile ? [0, -1.5, -1] : [0, -3.25, -1.3]}
+				rotation={[0, -0.5, -0.1]}
 			/>
 		</mesh>
 	);
@@ -32,10 +49,10 @@ const ComputersCanvas = () => {
 
 	useEffect(() => {
 		//* Add a listener for changes to the screen size
-		const mediaQuery = window.matchMedia('(max-width: 450px)');
+		const mediaQueryMobile = window.matchMedia('(max-width: 450px)');
 
 		//* Set the initial value of the `isMobile` state variable
-		setIsMobile(mediaQuery.matches);
+		setIsMobile(mediaQueryMobile.matches);
 
 		//* Define a callback function to handle changes to the media query
 		const handleMediaQueryChange = event => {
@@ -43,11 +60,11 @@ const ComputersCanvas = () => {
 		};
 
 		//* Add the callback function as a listener for changes to the media query
-		mediaQuery.addEventListener('change', handleMediaQueryChange);
+		mediaQueryMobile.addEventListener('change', handleMediaQueryChange);
 
 		//* Remove the listener when  the component is unmounted
 		return () => {
-			mediaQuery.removeEventListener('change', handleMediaQueryChange);
+			mediaQueryMobile.removeEventListener('change', handleMediaQueryChange);
 		};
 	}, []);
 
@@ -61,11 +78,14 @@ const ComputersCanvas = () => {
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls
+					enablePan={false}
 					autoRotate
 					autoRotateSpeed={1.0}
 					enableZoom={false}
-					maxPolarAngle={Math.PI / 2}
-					minPolarAngle={Math.PI / 2}
+					maxPolarAngle={Math.PI / 2.1}
+					minPolarAngle={Math.PI / 2.1}
+					// minAzimuthAngle={-Math.PI * 1.85}
+					// maxAzimuthAngle={Math.PI / 1.75}
 				/>
 				<Computers isMobile={isMobile} />
 			</Suspense>

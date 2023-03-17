@@ -9,7 +9,7 @@ const DEFAULT_OPTIONS = {
 	test: /\.(jpe?g|png|tiff|webp|svg|avif)$/i,
 	exclude: undefined,
 	include: undefined,
-	excludePublic: ['public/**/*'],
+	excludePublic: ['./public/**/*'],
 	includePublic: false, //* 3D-models in public with lossless quality
 	logStats: true,
 	svg: {

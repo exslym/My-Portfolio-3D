@@ -50,11 +50,14 @@ const Navbar = () => {
 						className='w-[28px] h-[28px] object-contain cursor-pointer'
 					/>
 					<div
+						// className={`${
+						// 	!toggle ? 'hidden' : 'flex'
+						// } justify-start items-end py-6 px-8 bg-grad_clr1 absolute right-0 top-[70px] mx-4 my-2 min-w-fit w-full max-w-xs z-10 rounded-xl `}
 						className={`${
 							!toggle ? 'hidden' : 'flex'
-						} justify-start items-end py-6 px-8 bg-grad_clr1 absolute right-0 top-20 mx-4 my-2 min-w-fit max-w-full z-10 rounded-xl `}
+						} justify-start items-end p-8 bg-transp90 rounded-xl z-10 absolute top-[70px] right-1/2 translate-x-1/2 w-full max-w-menuWidth `}
 					>
-						<ul className='list-none flex justify-end items-start flex-col gap-6 w-full'>
+						<ul className='list-none flex justify-end items-start flex-col gap-10 w-full'>
 							{navLinks.map(link => (
 								<li
 									key={link.id}
@@ -64,7 +67,7 @@ const Navbar = () => {
 									}}
 									className={`${
 										active === link.title ? 'text-clr_blue' : 'text-white-100'
-									} font-poppins font-medium cursor-pointer text-[16px] text-right w-full`}
+									} font-poppins font-bold cursor-pointer xs:text-[60px] text-[40px] text-right w-full`}
 								>
 									<a href={`#${link.id}`}>{link.title}</a>
 								</li>

@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<section className='relative w-full h-screen  mx-auto'>
 			<div
-				className={`${styles.paddingX} absolute inset-0 lg:top-[100px] md:top-[90px] xs:top-[90px] top-[100px] max-w-7xl mx-auto flex felx-row items-start gap-5`}
+				className={`${styles.paddingX} absolute inset-0 lg:top-[100px] md:top-[90px] xs:top-[90px] top-[100px] max-w-7xl mx-auto flex felx-row items-start gap-5 h-max`}
 			>
 				<div
 					className='flex flex-col justify-center items-center 
@@ -32,7 +32,9 @@ const Hero = () => {
 					</p>
 				</div>
 			</div>
-			<ComputersCanvas />
+			<div className='max-h-[500px] xs:max-h-[600px] md:max-h-full h-full relative top-1/2 -translate-y-1/2'>
+				<ComputersCanvas />
+			</div>
 			<div className='absolute xs:bottom-4 bottom-32 w-full flex justify-center items-center z-10'>
 				<a href='#about'>
 					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-primary flex justify-center items-start p-2'>

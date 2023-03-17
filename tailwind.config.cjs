@@ -19,15 +19,20 @@ module.exports = {
 				primary_old: '#050816',
 				secondary_old: '#aaa6c3',
 				tertiary_old: '#151030',
+				transp90: 'rgb(9, 11, 24, 0.9)',
 			},
 			boxShadow: {
 				card: '0px 35px 120px -15px #211e35',
+				inputs: '0px 0px 0px 1px #90a1b0 inset',
 			},
 			screens: {
 				xs: '450px',
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/herobg.png')",
+			},
+			maxWidth: {
+				menuWidth: 'calc(100% - 2 * 1.5rem)',
 			},
 		},
 	},
