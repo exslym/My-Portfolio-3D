@@ -23,7 +23,8 @@ module.exports = {
 			},
 			boxShadow: {
 				card: '0px 35px 120px -15px #211e35',
-				inputs: '0px 0px 0px 1px #90a1b0 inset',
+				inputsOff: '0px 0px 0px 0px #90a1b0 inset',
+				inputsOn: '0px 0px 0px 1px #90a1b0 inset',
 			},
 			screens: {
 				xs: '450px',
@@ -33,6 +34,7 @@ module.exports = {
 			},
 			maxWidth: {
 				menuWidth: 'calc(100% - 2 * 1.5rem)',
+				inputWidth: 'calc(100% - 2 * 1px)',
 			},
 		},
 	},

@@ -75,38 +75,44 @@ const Contact = () => {
 
 				<form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
 					<label htmlFor='name' className='flex flex-col'>
-						<span className='text-white font-medium mb-4'>Your name</span>
+						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+							Your name
+						</span>
 						<input
 							type='text'
 							name='name'
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white ronded-lg bfont-medium rounded-lg border-none outline-none hover:shadow-inputs focus:shadow-inputs'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white bfont-medium rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
 					<label htmlFor='email' className='flex flex-col'>
-						<span className='text-white font-medium mb-4'>Your email</span>
+						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+							Your email
+						</span>
 						<input
 							type='email'
 							name='email'
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your email?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white ronded-lg font-medium rounded-lg border-none outline-none hover:shadow-inputs focus:shadow-inputs'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-medium rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
 					<label htmlFor='message' className='flex flex-col'>
-						<span className='text-white font-medium mb-4'>Your message</span>
+						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+							Your message
+						</span>
 						<textarea
 							rows='7'
 							name='message'
 							value={form.message}
 							onChange={handleChange}
 							placeholder='What do you want to say?'
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white ronded-lg font-medium resize-none rounded-lg border-none outline-none hover:shadow-inputs focus:shadow-inputs'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-medium resize-none rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
@@ -115,7 +121,7 @@ const Contact = () => {
 						className={
 							loading
 								? `py-3 px-8 bg-tertiary w-fit text-secondary font-bold rounded-xl pointer-events-none border-none outline-none`
-								: `py-3 px-8 bg-tertiary w-fit text-white font-bold rounded-xl pointer-events-auto border-none outline-none hover:shadow-inputs focus:shadow-inputs`
+								: `py-3 px-8 bg-tertiary w-fit text-white font-bold rounded-xl pointer-events-auto border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn`
 						}
 					>
 						{loading ? 'Sending...' : 'Send'}
