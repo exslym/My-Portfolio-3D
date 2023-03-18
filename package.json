@@ -28,10 +28,10 @@
 		"cover 99.5%"
 	],
 	"scripts": {
-		"start": "vite",
+		"start": "vite --open",
+		"serve": "vite preview --open",
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
 		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
