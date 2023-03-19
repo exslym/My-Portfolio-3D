@@ -67,21 +67,41 @@ export default defineConfig({
 	},
 	plugins: [
 		react(),
-		ViteImageOptimizer({
-			DEFAULT_OPTIONS,
-		}),
 		ViteAliases(),
-		legacy({
-			targets: ['defaults', 'not IE 11'],
-		}),
+		// ViteImageOptimizer({
+		// 	DEFAULT_OPTIONS,
+		// }),
+		// legacy({
+		// 	targets: ['defaults', 'not IE 11'],
+		// }),
 	],
-	// site: 'https://exslym.github.io',
-	// base: '/My-Portfolio-3D',
-	site: 'https://01dev.ru',
-	base: '/',
+	site: 'https://exslym.github.io',
+	base: '/My-Portfolio-3D',
+	// site: 'https://01dev.ru',
+	// base: '/',
 	build: {
 		emptyOutDir: true,
 		outDir: path.resolve(__dirname, './build'),
+		rollupOptions: {
+			output: {
+				assetFileNames: assetInfo => {
+					let info = assetInfo.name.split('.');
+					let extType = info[info.length - 1];
+
+					if (/svg|png|jpe?g|tiff|gif|webp|avif|bmp|ico/i.test(extType)) {
+						extType = 'images';
+					} else if (/eot|otf|ttf|fnt|woff|woff2/.test(extType)) {
+						extType = 'fonts';
+					} else if (/css/.test(extType)) {
+						extType = 'css';
+					}
+					return `assets/${extType}/[name]-[hash][extname]`;
+				},
+
+				entryFileNames: 'assets/js/[name]-[hash].js',
+				chunkFileNames: 'assets/js/[name]-[hash].js',
+			},
+		},
 	},
 	server: {
 		hmr: true,
