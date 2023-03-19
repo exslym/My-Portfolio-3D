@@ -13,7 +13,7 @@ const Navbar = () => {
 			className={`w-full  flex items-center mx-auto fixed  bg-transparent transp-gradient  top-0 left-1/2 -translate-x-1/2 z-20`}
 		>
 			<div
-				className={`${styles.paddingX} w-full max-w-7xl flex justify-between items-center py-5 mx-auto`}
+				className={`${styles.paddingX} w-full max-w-7xl flex justify-between items-center sm:py-5 py-4 mx-auto`}
 			>
 				<Link
 					to='/'
@@ -23,7 +23,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src={logo} alt='logo' className='w-10 h-10 object-contain mr-1' />
+					<img src={logo} alt='logo' className='w-12 h-12 object-contain mr-1' />
 					<p className='flex text-white text-[18px] font-bold cursor-pointer hover:text-primary'>
 						Andrei&ensp;<span className='sm:block hidden'>Tsyplukhin</span>
 					</p>

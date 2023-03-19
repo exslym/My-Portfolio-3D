@@ -13,6 +13,33 @@
 	color-scheme: dark;
 }
 
+.vertical-timeline-element .vertical-timeline-element-arrow {
+	display: block;
+}
+.vertical-timeline-element .vertical-timeline-element-date {
+	display: block;
+}
+.vertical-timeline-element .date-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1169px) {
+	.vertical-timeline-element .vertical-timeline-element-date {
+		display: none;
+	}
+	.vertical-timeline-element .date-desktop {
+		display: none;
+	}
+	.vertical-timeline-element .date-mobile {
+		display: block;
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+	.vertical-timeline-element .vertical-timeline-element-content .custom-list {
+		margin-bottom: 4px;
+	}
+}
+
 .hash-span {
 	margin-top: -80px;
 	padding-bottom: 50px;

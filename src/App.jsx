@@ -3,9 +3,9 @@ import {
 	About,
 	Contact,
 	Experience,
-	Feedbacks,
 	Hero,
 	Navbar,
+	Socials,
 	StarsCanvas,
 	Tech,
 	Works,
@@ -26,6 +26,7 @@ const App = () => {
 				<div className='relative z-0'>
 					<Contact />
 					<StarsCanvas />
+					<Socials />
 				</div>
 			</div>
 		</BrowserRouter>

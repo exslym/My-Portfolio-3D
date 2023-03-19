@@ -1,16 +1,17 @@
 import {
 	astro,
 	cns_portfolio,
-	creator,
 	css,
 	dcreative,
+	discord,
 	doctoratwork,
 	doctoratwork1,
 	freelance,
 	git,
+	github_alt,
 	html,
 	javascript,
-	mobile,
+	linkedin,
 	qwik,
 	reactjs,
 	space_invaders,
@@ -18,7 +19,6 @@ import {
 	threejs,
 	typescript,
 	vite,
-	web,
 	webpack,
 } from '../assets';
 
@@ -34,21 +34,6 @@ export const navLinks = [
 	{
 		id: 'contact',
 		title: 'Contact',
-	},
-];
-
-const services = [
-	{
-		title: 'Web Developer',
-		icon: web,
-	},
-	{
-		title: 'React Developer',
-		icon: mobile,
-	},
-	{
-		title: 'Content Creator',
-		icon: creator,
 	},
 ];
 
@@ -77,22 +62,22 @@ const technologies = [
 		name: 'Astro',
 		icon: astro,
 	},
-	{
-		name: 'HTML5',
-		icon: html,
-	},
-	{
-		name: 'CSS3',
-		icon: css,
-	},
-	{
-		name: 'Tailwind',
-		icon: tailwind,
-	},
-	{
-		name: 'git',
-		icon: git,
-	},
+	// {
+	// 	name: 'HTML5',
+	// 	icon: html,
+	// },
+	// {
+	// 	name: 'CSS3',
+	// 	icon: css,
+	// },
+	// {
+	// 	name: 'Tailwind',
+	// 	icon: tailwind,
+	// },
+	// {
+	// 	name: 'git',
+	// 	icon: git,
+	// },
 	{
 		name: 'Webpack',
 		icon: webpack,
@@ -105,14 +90,16 @@ const technologies = [
 
 const experiences = [
 	{
-		title: 'Freelancer Web Developer',
-		company_name: 'Freelance',
-		icon: freelance,
+		title: 'Frontend Developer',
+		company_name: 'Doctor At Work',
+		icon: doctoratwork1,
 		iconBg: '#383E56',
-		date: 'January 2021 - September 2021',
+		date: 'February 2022 - Present',
 		points: [
-			'Developing and maintaining websites using JavaScript, HTML5, CSS3, SASS and other related technologies.',
+			'Developing and maintaining web applications using React, Astro, Qwik, TailwindCSS and other related technologies.',
+			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
+			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
 	},
 	{
@@ -128,44 +115,15 @@ const experiences = [
 		],
 	},
 	{
-		title: 'Frontend Developer',
-		company_name: 'Doctor At Work',
-		icon: doctoratwork1,
+		title: 'Freelancer Web Developer',
+		company_name: 'Freelance',
+		icon: freelance,
 		iconBg: '#383E56',
-		date: 'February 2022 - Present',
+		date: 'January 2021 - September 2021',
 		points: [
-			'Developing and maintaining web applications using React, Astro, Qwik, TailwindCSS and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+			'Developing and maintaining websites using JavaScript, HTML5, CSS3, SASS and other related technologies.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
 		],
-	},
-];
-
-const testimonials = [
-	{
-		testimonial:
-			'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-		name: 'Sara Lee',
-		designation: 'CFO',
-		company: 'Acme Co',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg',
-	},
-	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: 'Chris Brown',
-		designation: 'COO',
-		company: 'DEF Corp',
-		image: 'https://randomuser.me/api/portraits/men/5.jpg',
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: 'Lisa Wang',
-		designation: 'CTO',
-		company: '456 Enterprises',
-		image: 'https://randomuser.me/api/portraits/women/6.jpg',
 	},
 ];
 
@@ -239,4 +197,22 @@ const projects = [
 	},
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+const socials = [
+	{
+		name: 'linkedin',
+		icon: linkedin,
+		link: 'https://www.linkedin.com/in/exslym/',
+	},
+	{
+		name: 'github',
+		icon: github_alt,
+		link: 'https://github.com/exslym/',
+	},
+	{
+		name: 'discord',
+		icon: discord,
+		link: 'https://discordapp.com/users/794645643518803978/',
+	},
+];
+
+export { experiences, projects, socials, technologies };

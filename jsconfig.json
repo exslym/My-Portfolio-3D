@@ -19,6 +19,9 @@
             ],
             "@/*": [
                 "src/*"
+            ],
+            "@socials/*": [
+                "src/assets/socials/*"
             ]
         }
     }

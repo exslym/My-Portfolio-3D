@@ -31,6 +31,10 @@ import cns_portfolio from './cns_portfolio.jpg';
 import dcreative from './dcreative.jpg';
 import space_invaders from './space_invaders.jpg';
 
+import discord from './socials/discord.png';
+import github_alt from './socials/github_alt.png';
+import linkedin from './socials/linkedin.png';
+
 export {
 	astro,
 	close,
@@ -38,15 +42,18 @@ export {
 	creator,
 	css,
 	dcreative,
+	discord,
 	doctoratwork,
 	doctoratwork1,
 	figma,
 	freelance,
 	git,
 	github,
+	github_alt,
 	gotosite,
 	html,
 	javascript,
+	linkedin,
 	logo,
 	menu,
 	mobile,

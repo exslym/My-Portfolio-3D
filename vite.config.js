@@ -62,6 +62,9 @@ const DEFAULT_OPTIONS = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	css: {
+		devSourcemap: true,
+	},
 	plugins: [
 		react(),
 		ViteImageOptimizer({
@@ -72,10 +75,10 @@ export default defineConfig({
 			targets: ['defaults', 'not IE 11'],
 		}),
 	],
-	site: 'https://exslym.github.io',
-	base: '/My-Portfolio-3D',
-	// site: 'https://01dev.ru',
-	// base: '/',
+	// site: 'https://exslym.github.io',
+	// base: '/My-Portfolio-3D',
+	site: 'https://01dev.ru',
+	base: '/',
 	build: {
 		emptyOutDir: true,
 		outDir: path.resolve(__dirname, './build'),
