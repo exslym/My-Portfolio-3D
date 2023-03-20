@@ -10,7 +10,8 @@ module.exports = {
 				tertiary: '#0b212d',
 				clr_blue: '#58d5ff',
 				clr_btn_hover: '#103d56',
-				grad_clr1: '#05121D',
+				// grad_clr1: '#05121D',
+				grad_clr1: '#041721',
 				grad_clr2: '#090B18',
 				grad_clr3: '#110710',
 				'black-100': '#100d25',
@@ -31,6 +32,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/herobg.png')",
+				'hero-pattern':
+					'linear-gradient(to bottom, rgba(222, 178, 255, 0.1) 0%, transparent 95% );',
 			},
 			maxWidth: {
 				menuWidth: 'calc(100% - 2 * 1.5rem)',

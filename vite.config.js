@@ -1,6 +1,6 @@
 import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react';
-import path from 'path';
+import Path from 'path';
 import { defineConfig } from 'vite';
 import { ViteAliases } from 'vite-aliases';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
@@ -10,7 +10,7 @@ const DEFAULT_OPTIONS = {
 	exclude: undefined,
 	include: undefined,
 	excludePublic: ['./public/**/*'],
-	includePublic: false, //* 3D-models in public with lossless quality
+	includePublic: false,
 	logStats: true,
 	svg: {
 		multipass: true,
@@ -20,7 +20,7 @@ const DEFAULT_OPTIONS = {
 				params: {
 					overrides: {
 						cleanupNumericValues: false,
-						removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+						removeViewBox: false,
 					},
 					cleanupIDs: {
 						minify: false,
@@ -60,7 +60,6 @@ const DEFAULT_OPTIONS = {
 	},
 };
 
-// https://vitejs.dev/config/
 export default defineConfig({
 	css: {
 		devSourcemap: true,
@@ -71,9 +70,9 @@ export default defineConfig({
 		// ViteImageOptimizer({
 		// 	DEFAULT_OPTIONS,
 		// }),
-		// legacy({
-		// 	targets: ['defaults', 'not IE 11'],
-		// }),
+		legacy({
+			targets: ['defaults', 'not IE 11'],
+		}),
 	],
 	site: 'https://exslym.github.io',
 	base: '/My-Portfolio-3D',
@@ -81,7 +80,7 @@ export default defineConfig({
 	// base: '/',
 	build: {
 		emptyOutDir: true,
-		outDir: path.resolve(__dirname, './build'),
+		outDir: Path.resolve(__dirname, './build'),
 		rollupOptions: {
 			output: {
 				assetFileNames: assetInfo => {

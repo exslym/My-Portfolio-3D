@@ -11,17 +11,33 @@ npm install
 ### Start Dev Server
 
 ```
-npm run dev
+npm start
 ```
 
-### Build Prod Version
+### Build Production Version
 
 ```
 npm run build
 ```
 
-### Deployment on GitHub Pages
+### Preview Build Production Version
+
+```
+npm run serve
+```
+
+### Deployment on GitHub Pages (Optional)
 
 ```
 npm run deploy
 ```
+
+This adds gh-pages branch to your project github repository, deploys built project there, hosts the site via GitHub Pages.
+
+---
+
+### Features:
+
+- `Legacy Browsers` support via **@vite/plugin-legacy** with built-in **babel**
+- `SCSS` support via **sass**
+- `Autoprefix` support via **postcss**
