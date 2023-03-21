@@ -119,7 +119,7 @@ const experiences = [
 		company_name: 'Freelance',
 		icon: freelance,
 		iconBg: '#383E56',
-		date: 'January 2021 - September 2021',
+		date: 'January 2020 - September 2021',
 		points: [
 			'Developing and maintaining websites using JavaScript, HTML5, CSS3, SASS and other related technologies.',
 			'Implementing responsive design and ensuring cross-browser compatibility.',
