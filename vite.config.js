@@ -65,10 +65,6 @@ export default defineConfig({
 	publicDir: '../public',
 	base: './',
 
-	// site: 'https://exslym.github.io',
-	// base: '/My-Portfolio-3D',
-	// site: 'https://01dev.ru',
-
 	build: {
 		emptyOutDir: true,
 		outDir: Path.resolve(__dirname, './build'),
