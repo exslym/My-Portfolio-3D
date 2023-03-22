@@ -28,8 +28,8 @@
 		"cover 99.5%"
 	],
 	"scripts": {
-		"start": "vite --open",
-		"serve": "vite preview --open",
+		"start": "vite --port 3000 --open",
+		"serve": "vite preview --port 3001 --open",
 		"dev": "vite",
 		"build": "vite build",
 		"deploy": "gh-pages -d build"

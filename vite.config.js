@@ -61,23 +61,14 @@ const DEFAULT_OPTIONS = {
 };
 
 export default defineConfig({
-	css: {
-		devSourcemap: true,
-	},
-	plugins: [
-		react(),
-		ViteAliases(),
-		// ViteImageOptimizer({
-		// 	DEFAULT_OPTIONS,
-		// }),
-		legacy({
-			targets: ['defaults', 'not IE 11'],
-		}),
-	],
+	root: Path.resolve(__dirname, './src'),
+	publicDir: '../public',
+	base: './',
+
 	// site: 'https://exslym.github.io',
 	// base: '/My-Portfolio-3D',
-	site: 'https://01dev.ru',
-	base: '/',
+	// site: 'https://01dev.ru',
+
 	build: {
 		emptyOutDir: true,
 		outDir: Path.resolve(__dirname, './build'),
@@ -102,9 +93,22 @@ export default defineConfig({
 			},
 		},
 	},
+	css: {
+		devSourcemap: true,
+	},
+	plugins: [
+		react(),
+		ViteAliases(),
+		// ViteImageOptimizer({
+		// 	DEFAULT_OPTIONS,
+		// }),
+		legacy({
+			targets: ['> 0.5%', 'last 2 versions', 'Firefox ESR', 'not dead'],
+		}),
+	],
 	server: {
 		hmr: true,
-		port: 5173,
+		port: 3000,
 		host: '0.0.0.0',
 	},
 });
