@@ -23,7 +23,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src={logo} alt='logo' className='w-12 h-12 object-contain mr-1' />
+					<img src={logo} alt='logo' className='w-10 h-10 object-contain mr-1' />
 					<p className='flex text-white text-[18px] font-bold cursor-pointer hover:text-primary'>
 						Andrei&ensp;<span className='sm:block hidden'>Tsyplukhin</span>
 					</p>

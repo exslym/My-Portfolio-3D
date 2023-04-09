@@ -2,7 +2,7 @@ import close from './close.svg';
 import creator from './creator.png';
 import github from './github.png';
 import gotosite from './gotosite.png';
-import logo from './logo.svg';
+import logo from './logo.png';
 import menu from './menu.svg';
 import mobile from './mobile.png';
 import web from './web.png';
