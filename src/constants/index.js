@@ -15,6 +15,7 @@ import {
 	linkedin,
 	qwik,
 	reactjs,
+	social_network,
 	space_invaders,
 	tailwind,
 	threejs,
@@ -71,18 +72,18 @@ const technologies = [
 	// 	name: 'CSS3',
 	// 	icon: css,
 	// },
-	// {
-	// 	name: 'Tailwind',
-	// 	icon: tailwind,
-	// },
+	{
+		name: 'Tailwind',
+		icon: tailwind,
+	},
 	// {
 	// 	name: 'git',
 	// 	icon: git,
 	// },
-	{
-		name: 'Webpack',
-		icon: webpack,
-	},
+	// {
+	// 	name: 'Webpack',
+	// 	icon: webpack,
+	// },
 	{
 		name: 'Vite',
 		icon: vite,
@@ -129,6 +130,28 @@ const experiences = [
 ];
 
 const projects = [
+	{
+		name: 'Social Network',
+		description:
+			'A social network project is a web application (SPA) that allows users to search and interact with each other in various ways, such as liking or commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'ant-design',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: social_network,
+		source_code_link: 'https://github.com/exslym/My-Social-Network/',
+		website_link: 'https://exslym.github.io/My-Social-Network/',
+	},
 	{
 		name: '2048-Game',
 		description:

@@ -30,6 +30,7 @@ import freelance from './company/freelance.png';
 import cns_portfolio from './cns_portfolio.jpg';
 import dcreative from './dcreative.jpg';
 import game_2048 from './game_2048.jpg';
+import social_network from './social_network.jpg';
 import space_invaders from './space_invaders.jpg';
 
 import discord from './socials/discord.png';
@@ -63,6 +64,7 @@ export {
 	reactjs,
 	redux,
 	sass,
+	social_network,
 	space_invaders,
 	tailwind,
 	threejs,
