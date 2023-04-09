@@ -7,6 +7,7 @@ import {
 	doctoratwork,
 	doctoratwork1,
 	freelance,
+	game_2048,
 	git,
 	github_alt,
 	html,
@@ -129,6 +130,28 @@ const experiences = [
 
 const projects = [
 	{
+		name: '2048-Game',
+		description:
+			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'algorithms',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: game_2048,
+		source_code_link: 'https://github.com/exslym/2048-Game/',
+		website_link: 'https://exslym.github.io/2048-Game/',
+	},
+	{
 		name: 'D-Creative Studio',
 		description:
 			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
@@ -173,28 +196,28 @@ const projects = [
 		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
 	},
 
-	{
-		name: 'CNS-Portfolio',
-		description:
-			"The multi-page website with interactive educational question-answer quiz for physicians that helps to learn about treatment options and appropriate drug prescribing based on patient's history and various health conditions.",
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'multipage',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: cns_portfolio,
-		source_code_link: 'https://github.com/exslym/CNS-Portfolio/',
-		website_link: 'https://exslym.github.io/CNS-Portfolio/',
-	},
+	// {
+	// 	name: 'CNS-Portfolio',
+	// 	description:
+	// 		"The multi-page website with interactive educational question-answer quiz for physicians that helps to learn about treatment options and appropriate drug prescribing based on patient's history and various health conditions.",
+	// 	tags: [
+	// 		{
+	// 			name: 'javascript',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'multipage',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'scss',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 	],
+	// 	image: cns_portfolio,
+	// 	source_code_link: 'https://github.com/exslym/CNS-Portfolio/',
+	// 	website_link: 'https://exslym.github.io/CNS-Portfolio/',
+	// },
 ];
 
 const socials = [
