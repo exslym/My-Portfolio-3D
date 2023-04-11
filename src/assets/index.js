@@ -27,6 +27,7 @@ import doctoratwork from './company/doctoratwork.png';
 import doctoratwork1 from './company/doctoratwork1.png';
 import freelance from './company/freelance.png';
 
+import ai_3d_tshirts from './ai_3d_tshirts.jpg';
 import cns_portfolio from './cns_portfolio.jpg';
 import dcreative from './dcreative.jpg';
 import game_2048 from './game_2048.jpg';
@@ -38,6 +39,7 @@ import github_alt from './socials/github_alt.png';
 import linkedin from './socials/linkedin.png';
 
 export {
+	ai_3d_tshirts,
 	astro,
 	close,
 	cns_portfolio,

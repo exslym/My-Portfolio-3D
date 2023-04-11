@@ -1,4 +1,5 @@
 import {
+	ai_3d_tshirts,
 	astro,
 	cns_portfolio,
 	css,
@@ -131,9 +132,33 @@ const experiences = [
 
 const projects = [
 	{
+		name: '3D T-Shirts Design with AI',
+		description:
+			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
+		tags: [
+			{
+				name: 'threejs',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: ai_3d_tshirts,
+		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
+		website_link: 'https://exslym.github.io/3D-AI-Project/',
+	},
+	{
 		name: 'Social Network',
 		description:
-			'A social network project is a web application (SPA) that allows users to search and interact with each other in various ways, such as liking or commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
+			'A social network project is a dynamic web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting.',
+		// description:
+		// 'A social network project is a web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
 		tags: [
 			{
 				name: 'typescript',
@@ -151,28 +176,6 @@ const projects = [
 		image: social_network,
 		source_code_link: 'https://github.com/exslym/My-Social-Network/',
 		website_link: 'https://exslym.github.io/My-Social-Network/',
-	},
-	{
-		name: '2048-Game',
-		description:
-			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'algorithms',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: game_2048,
-		source_code_link: 'https://github.com/exslym/2048-Game/',
-		website_link: 'https://exslym.github.io/2048-Game/',
 	},
 	{
 		name: 'D-Creative Studio',
@@ -195,6 +198,28 @@ const projects = [
 		image: dcreative,
 		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
 		website_link: 'https://exslym.github.io/D-Creative-Studio/',
+	},
+	{
+		name: '2048-Game',
+		description:
+			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'algorithms',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: game_2048,
+		source_code_link: 'https://github.com/exslym/2048-Game/',
+		website_link: 'https://exslym.github.io/2048-Game/',
 	},
 	{
 		name: 'Space Invaders [Game]',
