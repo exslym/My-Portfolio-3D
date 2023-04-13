@@ -43,3 +43,6 @@ This adds gh-pages branch to your project github repository, deploys built proje
 - `Legacy Browsers` support via **@vite/plugin-legacy** with built-in **babel**
 - `SCSS` support via **sass**
 - `Autoprefix` support via **postcss**
+- `3D Effects` support via **ThreeJS**
+- `Animation` support via **Framer Motion**
+- `Styles` support via **TailwindCSS**
