@@ -1,6 +1,8 @@
 ## [My-Portfolio-3D](https://exslym.github.io/My-Portfolio-3D/)
 
-### An outstanding and impressive 3D Developer Portfolio website using 3D-graphics and animations with ThreeJS, React and Tailwind!
+[![preview](https://github.com/exslym/My-Portfolio-3D/blob/main/public/preview.jpg)](https://exslym.github.io/My-Portfolio-3D/)
+
+### An outstanding and impressive 3D Developer Portfolio website using React, 3D-graphics and animations with ThreeJS and Framer Motion,  and TailwindCSS!
 
 ---
 
