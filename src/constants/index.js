@@ -1,6 +1,7 @@
 import {
 	ai_3d_tshirts,
 	astro,
+	chat_gpt,
 	cns_portfolio,
 	css,
 	dcreative,
@@ -154,6 +155,28 @@ const projects = [
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
 	},
 	{
+		name: 'ChatGPT App (web vers.)',
+		description:
+			'A website version of ChatGPT App project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+		tags: [
+			{
+				name: 'dart',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'flutter',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'openai-api',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: chat_gpt,
+		source_code_link: 'https://github.com/exslym/ChatGPT_App/',
+		website_link: 'https://chat-gpt-app-kohl.vercel.app/',
+	},
+	{
 		name: 'Social Network',
 		description:
 			'A social network project is a dynamic web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting.',
@@ -178,28 +201,6 @@ const projects = [
 		website_link: 'https://exslym.github.io/My-Social-Network/',
 	},
 	{
-		name: 'D-Creative Studio',
-		description:
-			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'animate-on-scroll',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: dcreative,
-		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
-		website_link: 'https://exslym.github.io/D-Creative-Studio/',
-	},
-	{
 		name: '2048-Game',
 		description:
 			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
@@ -220,6 +221,28 @@ const projects = [
 		image: game_2048,
 		source_code_link: 'https://github.com/exslym/2048-Game/',
 		website_link: 'https://exslym.github.io/2048-Game/',
+	},
+	{
+		name: 'D-Creative Studio',
+		description:
+			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'animate-on-scroll',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: dcreative,
+		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
+		website_link: 'https://exslym.github.io/D-Creative-Studio/',
 	},
 	{
 		name: 'Space Invaders [Game]',
