@@ -10,6 +10,7 @@ import web from './web.png';
 import astro from './tech/astro.png';
 import css from './tech/css.png';
 import figma from './tech/figma.png';
+import flutter from './tech/flutter.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
@@ -52,6 +53,7 @@ export {
 	doctoratwork,
 	doctoratwork1,
 	figma,
+	flutter,
 	freelance,
 	game_2048,
 	git,

@@ -8,6 +8,7 @@ import {
 	discord,
 	doctoratwork,
 	doctoratwork1,
+	flutter,
 	freelance,
 	game_2048,
 	git,
@@ -55,6 +56,10 @@ const technologies = [
 		icon: reactjs,
 	},
 	{
+		name: 'Flutter',
+		icon: flutter,
+	},
+	{
 		name: 'ThreeJS',
 		icon: threejs,
 	},
@@ -74,10 +79,10 @@ const technologies = [
 	// 	name: 'CSS3',
 	// 	icon: css,
 	// },
-	{
-		name: 'Tailwind',
-		icon: tailwind,
-	},
+	// {
+	// 	name: 'Tailwind',
+	// 	icon: tailwind,
+	// },
 	// {
 	// 	name: 'git',
 	// 	icon: git,

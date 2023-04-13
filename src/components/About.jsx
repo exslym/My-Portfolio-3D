@@ -16,9 +16,9 @@ const About = () => {
 				variants={fadeIn('', '', 0.1, 1)}
 				className='mt-4 text-primary text-[17px] max-w-3xl leading-[30px]'
 			>
-				I'm a skilled frontend developer with experience in&nbsp;TypeScript and&nbsp;JavaScript,
-				and&nbsp;expertise in&nbsp;frameworks like React, Astro, Qwik and&nbsp;Three.js. I'm
-				a&nbsp;quick learner and&nbsp;collaborate closely with&nbsp;clients to&nbsp;create
+				I'm a skilled frontend developer with experience in&nbsp;TypeScript, JavaScript, Dart
+				and&nbsp;expertise in&nbsp;frameworks like React, Astro, Qwik, Three.js and&nbsp;Flutter.
+				I'm a&nbsp;quick learner and&nbsp;collaborate closely with&nbsp;clients to&nbsp;create
 				efficient, scalable and&nbsp;user&#8209;friendly solutions that solve real&#8209;world
 				problems. Let's work together to&nbsp;bring your ideas to&nbsp;life!
 			</motion.p>
