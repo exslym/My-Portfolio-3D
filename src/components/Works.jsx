@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, website_link }) => {
 	return (
-		<motion.div variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}>
+		<motion.div variants={fadeIn('up', 'spring', 0.4 * index, 0.5)}>
 			<Tilt
 				options={{
 					max: 45,

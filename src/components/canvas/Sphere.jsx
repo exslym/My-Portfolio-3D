@@ -30,6 +30,7 @@ const SphereCanvas = ({ icon }) => {
 					minPolarAngle={Math.PI / 2.2}
 					maxAzimuthAngle={Math.PI * 2.2}
 					minAzimuthAngle={Math.PI * 1.8}
+					rotateSpeed={0.2}
 				/>
 				<Sphere imgUrl={icon} />
 			</Suspense>
