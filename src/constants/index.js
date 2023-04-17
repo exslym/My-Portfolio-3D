@@ -162,7 +162,7 @@ const projects = [
 	{
 		name: 'ChatGPT App (web vers.)',
 		description:
-			'A website version of ChatGPT App project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+			'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
 		tags: [
 			{
 				name: 'dart',
