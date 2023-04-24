@@ -1,9 +1,11 @@
 import {
 	ai_3d_tshirts,
+	ai_summarizer,
 	astro,
 	chat_gpt,
 	cns_portfolio,
 	css,
+	currency_list,
 	dcreative,
 	discord,
 	doctoratwork,
@@ -154,15 +156,41 @@ const projects = [
 				name: 'tailwindcss',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'openai',
+				color: 'yellow-text-gradient',
+			},
 		],
 		image: ai_3d_tshirts,
 		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
 	},
+	// {
+	// 	name: 'ChatGPT App (web vers.)',
+	// 	description:
+	// 		'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+	// 	tags: [
+	// 		{
+	// 			name: 'dart',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'flutter',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'openai-api',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 	],
+	// 	image: chat_gpt,
+	// 	source_code_link: 'https://github.com/exslym/ChatGPT_App/',
+	// 	website_link: 'https://chat-gpt-app-kohl.vercel.app/',
+	// },
 	{
-		name: 'ChatGPT App (web vers.)',
+		name: 'Cryptocurrency Prices',
 		description:
-			'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+			'A website version of mobile App created using the Flutter framework. The app provides real-time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
 		tags: [
 			{
 				name: 'dart',
@@ -173,23 +201,25 @@ const projects = [
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'openai-api',
+				name: 'bloc',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'firebase',
+				color: 'yellow-text-gradient',
+			},
 		],
-		image: chat_gpt,
-		source_code_link: 'https://github.com/exslym/ChatGPT_App/',
-		website_link: 'https://chat-gpt-app-kohl.vercel.app/',
+		image: currency_list,
+		source_code_link: 'https://github.com/exslym/Crypto-Coins-List/',
+		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
-		name: 'Social Network',
+		name: 'AI Article Summarizer',
 		description:
-			'A social network project is a dynamic web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting.',
-		// description:
-		// 'A social network project is a web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
+			'This minimalistic cozy color app is an open-source article summarizer that transforms lengthy articles into clear and concise summaries, powered by RapidAPI.',
 		tags: [
 			{
-				name: 'typescript',
+				name: 'javascript',
 				color: 'blue-text-gradient',
 			},
 			{
@@ -197,16 +227,44 @@ const projects = [
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'ant-design',
+				name: 'tailwindcss',
 				color: 'pink-text-gradient',
 			},
+			{
+				name: 'openai',
+				color: 'yellow-text-gradient',
+			},
 		],
-		image: social_network,
-		source_code_link: 'https://github.com/exslym/My-Social-Network/',
-		website_link: 'https://exslym.github.io/My-Social-Network/',
+		image: ai_summarizer,
+		source_code_link: 'https://github.com/exslym/AI-Summarizer/',
+		website_link: 'https://exslym.github.io/AI-Summarizer/',
 	},
+	// {
+	// 	name: 'Social Network',
+	// 	description:
+	// 		'A social network project is a dynamic web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting.',
+	// 	// description:
+	// 	// 'A social network project is a web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
+	// 	tags: [
+	// 		{
+	// 			name: 'typescript',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'react',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'ant-design',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 	],
+	// 	image: social_network,
+	// 	source_code_link: 'https://github.com/exslym/My-Social-Network/',
+	// 	website_link: 'https://exslym.github.io/My-Social-Network/',
+	// },
 	{
-		name: '2048-Game',
+		name: '2048 [Game]',
 		description:
 			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
 		tags: [
