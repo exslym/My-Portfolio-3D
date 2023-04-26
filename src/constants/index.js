@@ -216,7 +216,7 @@ const projects = [
 	{
 		name: 'AI Article Summarizer',
 		description:
-			'This minimalistic cozy color app is an open-source article summarizer that transforms lengthy articles into clear and concise summaries, powered by RapidAPI.',
+			'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
 		tags: [
 			{
 				name: 'javascript',
