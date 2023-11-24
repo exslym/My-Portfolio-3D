@@ -84,7 +84,7 @@ const Contact = () => {
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white bfont-medium rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
@@ -98,7 +98,7 @@ const Contact = () => {
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your email?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-medium rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
@@ -112,7 +112,7 @@ const Contact = () => {
 							value={form.message}
 							onChange={handleChange}
 							placeholder='What do you want to say?'
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-medium resize-none rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal resize-none rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
 						/>
 					</label>
 
@@ -120,8 +120,8 @@ const Contact = () => {
 						type='submit'
 						className={
 							loading
-								? `py-3 px-8 bg-tertiary w-fit text-secondary font-bold rounded-xl pointer-events-none border-none outline-none`
-								: `py-3 px-8 bg-tertiary w-fit text-white font-bold rounded-xl pointer-events-auto border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn`
+								? `py-3 px-8 bg-tertiary w-fit text-secondary font-medium rounded-xl pointer-events-none border-none outline-none`
+								: `py-3 px-8 bg-tertiary w-fit text-white font-medium rounded-xl pointer-events-auto border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn`
 						}
 					>
 						{loading ? 'Sending...' : 'Send'}

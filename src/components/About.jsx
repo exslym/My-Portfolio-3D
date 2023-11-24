@@ -13,11 +13,13 @@ const About = () => {
 			</motion.div>
 
 			<motion.p
-				variants={fadeIn('', '', 0.1, 1)}
+				variants={fadeIn('', '', 0.2, 1)}
 				className='mt-4 text-primary text-[17px] max-w-3xl leading-[30px]'
 			>
-				I'm a skilled frontend developer with experience in&nbsp;TypeScript, JavaScript, Dart
-				and&nbsp;expertise in&nbsp;frameworks like React, Astro, Qwik, Three.js and&nbsp;Flutter.
+				I&rsquo;m a&nbsp;skilled frontend developer with over 3&nbsp;years of&nbsp;experience
+				in&nbsp;TypeScript, JavaScript and Dart and also expertise in&nbsp;frameworks like React,
+				Astro, Qwik, Three.js and Flutter.
+				<br />
 				I'm a&nbsp;quick learner and&nbsp;collaborate closely with&nbsp;clients to&nbsp;create
 				efficient, scalable and&nbsp;user&#8209;friendly solutions that solve real&#8209;world
 				problems. Let's work together to&nbsp;bring your ideas to&nbsp;life!

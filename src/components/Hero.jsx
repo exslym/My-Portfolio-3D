@@ -27,8 +27,8 @@ const Hero = () => {
 					<p
 						className={`${styles.heroSubText} relative z-10 mt-2 text-white-100 md:max-w-[640px] max-w-[460px] `}
 					>
-						I'm a Frontend Developer, <br />I also develop 3D visuals, user interfaces and&nbsp;web
-						applications.
+						I'm a talented frontend developer, <br />I also develop 3D visuals, user interfaces
+						and&nbsp;web applications.
 					</p>
 				</div>
 			</div>
