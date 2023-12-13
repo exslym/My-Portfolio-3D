@@ -16,6 +16,10 @@ dist
 dist-ssr
 *.local
 
+# Private keys
+.env
+*.env
+
 # misc
 .DS_Store
 

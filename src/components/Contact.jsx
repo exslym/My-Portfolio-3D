@@ -19,6 +19,13 @@ const Contact = () => {
 	});
 	const [loading, setLoading] = useState(false);
 
+	//! PRIVATE INFO hidden in env (.env needs to be placed in ./src)
+	const serviceID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+	const templateID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+	const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+	const toName = import.meta.env.VITE_APP_EMAILJS_TO_NAME;
+	const toEmail = import.meta.env.VITE_APP_EMAILJS_TO_EMAIL;
+
 	const handleChange = e => {
 		const { name, value } = e.target;
 		setForm({ ...form, [name]: value });
@@ -28,18 +35,19 @@ const Contact = () => {
 		if (form.name && form.email && form.message) {
 			document.querySelector('form').classList.remove('input_error');
 			setLoading(true);
+
 			emailjs
 				.send(
-					'service_fffw0th',
-					'template_o9xubcg',
+					serviceID,
+					templateID,
 					{
 						from_name: form.name,
-						to_name: 'Andrei',
+						to_name: toName,
 						from_email: form.email,
-						to_email: '000exs@gmail.com',
+						to_email: toEmail,
 						message: form.message,
 					},
-					'WajGWXwNs7zQUnPq7',
+					publicKey,
 				)
 				.then(
 					() => {
@@ -74,13 +82,15 @@ const Contact = () => {
 				<h3 className={styles.sectionHeadText}>Contact.</h3>
 
 				<form ref={formRef} onSubmit={handleSubmit} className='mt-10 flex flex-col gap-8'>
-					<label htmlFor='name' className='flex flex-col'>
+					<label className='flex flex-col'>
 						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
 							Your name
 						</span>
 						<input
 							type='text'
 							name='name'
+							autoComplete='off'
+							required
 							value={form.name}
 							onChange={handleChange}
 							placeholder="What's your name?"
@@ -88,13 +98,15 @@ const Contact = () => {
 						/>
 					</label>
 
-					<label htmlFor='email' className='flex flex-col'>
+					<label className='flex flex-col'>
 						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
 							Your email
 						</span>
 						<input
 							type='email'
 							name='email'
+							autoComplete='off'
+							required
 							value={form.email}
 							onChange={handleChange}
 							placeholder="What's your email?"
@@ -102,13 +114,15 @@ const Contact = () => {
 						/>
 					</label>
 
-					<label htmlFor='message' className='flex flex-col'>
+					<label className='flex flex-col'>
 						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
 							Your message
 						</span>
 						<textarea
 							rows='7'
 							name='message'
+							autoComplete='off'
+							required
 							value={form.message}
 							onChange={handleChange}
 							placeholder='What do you want to say?'
