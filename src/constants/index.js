@@ -29,6 +29,10 @@ import {
 	webpack,
 } from '../assets';
 
+const githubUser = import.meta.env.VITE_APP_GITHUB_USER;
+const linkedinUser = import.meta.env.VITE_APP_LINKEDIN_USER;
+const discordUser = import.meta.env.VITE_APP_DISCORD_USER;
+
 export const navLinks = [
 	{
 		id: 'about',
@@ -359,17 +363,17 @@ const socials = [
 	{
 		name: 'linkedin',
 		icon: linkedin,
-		link: 'https://www.linkedin.com/in/exslym/',
+		link: `https://www.linkedin.com/in/${linkedinUser}/`,
 	},
 	{
 		name: 'github',
 		icon: github_alt,
-		link: 'https://github.com/exslym/',
+		link: `https://github.com/${githubUser}/`,
 	},
 	{
 		name: 'discord',
 		icon: discord,
-		link: 'https://discordapp.com/users/794645643518803978/',
+		link: `https://github.com/${discordUser}/`,
 	},
 ];
 

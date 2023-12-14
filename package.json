@@ -1,7 +1,7 @@
 {
 	"name": "portfolio-3d",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"description": "3D Developer Portfolio website using 3D-graphics and animations with ThreeJS, React and Tailwind",
 	"license": "ISC",
@@ -16,7 +16,7 @@
 		"vite-plugin-image-optimizer"
 	],
 	"author": "exslym",
-	"homepage": "https://github.com/exslym/My-Portfolio-3D",
+	"homepage": "https://github.com/exslym/My-Portfolio-3D/#",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/exslym/My-Portfolio-3D.git"
