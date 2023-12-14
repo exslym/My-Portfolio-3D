@@ -24,6 +24,7 @@ import {
 	space_invaders,
 	tailwind,
 	threejs,
+	tiny_world_3d,
 	typescript,
 	vite,
 	webpack,
@@ -145,12 +146,12 @@ const experiences = [
 
 const projects = [
 	{
-		name: '3D T-Shirts Design with AI',
+		name: '3D Tiny World',
 		description:
-			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
+			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D-graphics and animations with ThreeJS, React and Tailwind.',
 		tags: [
 			{
-				name: 'threejs',
+				name: 'javascript',
 				color: 'blue-text-gradient',
 			},
 			{
@@ -162,36 +163,14 @@ const projects = [
 				color: 'pink-text-gradient',
 			},
 			{
-				name: 'openai',
+				name: 'threejs',
 				color: 'yellow-text-gradient',
 			},
 		],
-		image: ai_3d_tshirts,
-		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
-		website_link: 'https://exslym.github.io/3D-AI-Project/',
+		image: tiny_world_3d,
+		source_code_link: 'https://github.com/exslym/Tiny-World-3D/',
+		website_link: 'https://exslym.github.io/Tiny-World-3D/',
 	},
-	// {
-	// 	name: 'ChatGPT App (web vers.)',
-	// 	description:
-	// 		'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
-	// 	tags: [
-	// 		{
-	// 			name: 'dart',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'flutter',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'openai-api',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 	],
-	// 	image: chat_gpt,
-	// 	source_code_link: 'https://github.com/exslym/ChatGPT_App/',
-	// 	website_link: 'https://chat-gpt-app-kohl.vercel.app/',
-	// },
 	{
 		name: 'Cryptocurrency Prices',
 		description:
@@ -219,6 +198,58 @@ const projects = [
 		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
+		name: '3D T-Shirts Design with AI',
+		description:
+			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'openai',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: ai_3d_tshirts,
+		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
+		website_link: 'https://exslym.github.io/3D-AI-Project/',
+	},
+	{
+		name: 'Space Invaders [Game]',
+		description:
+			'Web-based legendary classic arcade game Space Invaders made with JavaScript and Canvas with its iconic pixel graphics and addictive gameplay with mobile adaptivity and touch controls.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'html',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'canvas',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: space_invaders,
+		source_code_link: 'https://github.com/exslym/Space-Invaders_GAME/',
+		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
+	},
+	{
 		name: 'AI Article Summarizer',
 		description:
 			'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
@@ -244,6 +275,80 @@ const projects = [
 		source_code_link: 'https://github.com/exslym/AI-Summarizer/',
 		website_link: 'https://exslym.github.io/AI-Summarizer/',
 	},
+	{
+		name: '2048 [Game]',
+		description:
+			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'htnl',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'algorithms',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: game_2048,
+		source_code_link: 'https://github.com/exslym/2048-Game/',
+		website_link: 'https://exslym.github.io/2048-Game/',
+	},
+	{
+		name: 'D-Creative Studio',
+		description:
+			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'html',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'animations',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: dcreative,
+		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
+		website_link: 'https://exslym.github.io/D-Creative-Studio/',
+	},
+	// {
+	// 	name: 'ChatGPT App (web vers.)',
+	// 	description:
+	// 		'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+	// 	tags: [
+	// 		{
+	// 			name: 'dart',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'flutter',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'openai-api',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 	],
+	// 	image: chat_gpt,
+	// 	source_code_link: 'https://github.com/exslym/ChatGPT_App/',
+	// 	website_link: 'https://chat-gpt-app-kohl.vercel.app/',
+	// },
 	// {
 	// 	name: 'Social Network',
 	// 	description:
@@ -268,73 +373,6 @@ const projects = [
 	// 	source_code_link: 'https://github.com/exslym/My-Social-Network/',
 	// 	website_link: 'https://exslym.github.io/My-Social-Network/',
 	// },
-	{
-		name: '2048 [Game]',
-		description:
-			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'algorithms',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: game_2048,
-		source_code_link: 'https://github.com/exslym/2048-Game/',
-		website_link: 'https://exslym.github.io/2048-Game/',
-	},
-	{
-		name: 'D-Creative Studio',
-		description:
-			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'animate-on-scroll',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: dcreative,
-		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
-		website_link: 'https://exslym.github.io/D-Creative-Studio/',
-	},
-	{
-		name: 'Space Invaders [Game]',
-		description:
-			'Web-based legendary classic arcade game Space Invaders made with JavaScript and Canvas with its iconic pixel graphics and addictive gameplay with mobile adaptivity and touch controls.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'canvas',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: space_invaders,
-		source_code_link: 'https://github.com/exslym/Space-Invaders_GAME/',
-		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
-	},
-
 	// {
 	// 	name: 'CNS-Portfolio',
 	// 	description:

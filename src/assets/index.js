@@ -37,6 +37,7 @@ import dcreative from './dcreative.jpg';
 import game_2048 from './game_2048.jpg';
 import social_network from './social_network.jpg';
 import space_invaders from './space_invaders.jpg';
+import tiny_world_3d from './tiny_world_3d.jpg';
 
 import discord from './socials/discord.png';
 import github_alt from './socials/github_alt.png';
@@ -78,6 +79,7 @@ export {
 	space_invaders,
 	tailwind,
 	threejs,
+	tiny_world_3d,
 	typescript,
 	vite,
 	web,
