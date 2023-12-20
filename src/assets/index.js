@@ -34,6 +34,7 @@ import chat_gpt from './chat_gpt.jpg';
 import cns_portfolio from './cns_portfolio.jpg';
 import currency_list from './currency_list.jpg';
 import dcreative from './dcreative.jpg';
+import eventlify from './eventlify.jpg';
 import game_2048 from './game_2048.jpg';
 import social_network from './social_network.jpg';
 import space_invaders from './space_invaders.jpg';
@@ -57,6 +58,7 @@ export {
 	discord,
 	doctoratwork,
 	doctoratwork1,
+	eventlify,
 	figma,
 	flutter,
 	freelance,

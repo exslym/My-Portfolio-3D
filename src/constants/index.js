@@ -10,6 +10,7 @@ import {
 	discord,
 	doctoratwork,
 	doctoratwork1,
+	eventlify,
 	flutter,
 	freelance,
 	game_2048,
@@ -198,6 +199,32 @@ const projects = [
 		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
+		name: 'Eventlify',
+		description:
+			'The events web application stands as a comprehensive, full-stack platform for managing events taking place globally. With this app you have the capability to purchase tickets for any event published there or even initiate and manage your own events.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'next14',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: eventlify,
+		source_code_link: 'https://github.com/exslym/eventlify/',
+		website_link: 'https://eventlify-exs.vercel.app/',
+	},
+	{
 		name: '3D T-Shirts Design with AI',
 		description:
 			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
@@ -222,32 +249,6 @@ const projects = [
 		image: ai_3d_tshirts,
 		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
-	},
-	{
-		name: 'Space Invaders [Game]',
-		description:
-			'Web-based legendary classic arcade game Space Invaders made with JavaScript and Canvas with its iconic pixel graphics and addictive gameplay with mobile adaptivity and touch controls.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'html',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'canvas',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: space_invaders,
-		source_code_link: 'https://github.com/exslym/Space-Invaders_GAME/',
-		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
 	},
 	{
 		name: 'AI Article Summarizer',
@@ -276,32 +277,6 @@ const projects = [
 		website_link: 'https://exslym.github.io/AI-Summarizer/',
 	},
 	{
-		name: '2048 [Game]',
-		description:
-			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'htnl',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'algorithms',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: game_2048,
-		source_code_link: 'https://github.com/exslym/2048-Game/',
-		website_link: 'https://exslym.github.io/2048-Game/',
-	},
-	{
 		name: 'D-Creative Studio',
 		description:
 			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
@@ -326,6 +301,58 @@ const projects = [
 		image: dcreative,
 		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
 		website_link: 'https://exslym.github.io/D-Creative-Studio/',
+	},
+	{
+		name: 'Space Invaders [Game]',
+		description:
+			'Web-based legendary classic arcade game Space Invaders made with JavaScript and Canvas with its iconic pixel graphics and addictive gameplay with mobile adaptivity and touch controls.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'html',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'canvas',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: space_invaders,
+		source_code_link: 'https://github.com/exslym/Space-Invaders_GAME/',
+		website_link: 'https://exslym.github.io/Space-Invaders_GAME/',
+	},
+	{
+		name: '2048 [Game]',
+		description:
+			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'htnl',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'scss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'algorithms',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: game_2048,
+		source_code_link: 'https://github.com/exslym/2048-Game/',
+		website_link: 'https://exslym.github.io/2048-Game/',
 	},
 	// {
 	// 	name: 'ChatGPT App (web vers.)',
