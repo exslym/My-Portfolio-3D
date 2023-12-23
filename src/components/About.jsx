@@ -18,7 +18,7 @@ const About = () => {
 			>
 				I&rsquo;m a&nbsp;skilled frontend developer with over 3&nbsp;years of&nbsp;experience
 				in&nbsp;TypeScript, JavaScript and Dart and also expertise in&nbsp;frameworks like React,
-				Astro, Qwik, Three.js and Flutter.
+				Next, Astro, Qwik, Three.js and Flutter.
 				<br />
 				I'm a&nbsp;quick learner and&nbsp;collaborate closely with&nbsp;clients to&nbsp;create
 				efficient, scalable and&nbsp;user&#8209;friendly solutions that solve real&#8209;world

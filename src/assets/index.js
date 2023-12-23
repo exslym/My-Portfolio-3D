@@ -34,6 +34,7 @@ import chat_gpt from './chat_gpt.jpg';
 import cns_portfolio from './cns_portfolio.jpg';
 import currency_list from './currency_list.jpg';
 import dcreative from './dcreative.jpg';
+import e_commerce from './e_commerce.jpg';
 import eventlify from './eventlify.jpg';
 import game_2048 from './game_2048.jpg';
 import social_network from './social_network.jpg';
@@ -58,6 +59,7 @@ export {
 	discord,
 	doctoratwork,
 	doctoratwork1,
+	e_commerce,
 	eventlify,
 	figma,
 	flutter,

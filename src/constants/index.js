@@ -10,6 +10,7 @@ import {
 	discord,
 	doctoratwork,
 	doctoratwork1,
+	e_commerce,
 	eventlify,
 	flutter,
 	freelance,
@@ -113,7 +114,7 @@ const experiences = [
 		iconBg: '#383E56',
 		date: 'September 2020 - Present',
 		points: [
-			"Developed and maintained over 140 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns",
+			"Developed and maintained over 150 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns",
 			'Created dozens of mini-games, chat bots, quizzes and interactive educational sites with complex animated and interactive elements and detailings using JavaScript, TypeScript and frontend frameworks like React, Astro, Qwik, ThreeJS, etc.',
 			"Adapted the code of third-party client projects made in React framework, revised for publication on own or the company's platforms.",
 			'Collaborated with cross-functional teams including designers, project managers, and other developers to create high-quality products.',
@@ -147,6 +148,32 @@ const experiences = [
 
 const projects = [
 	{
+		name: 'E-Commerce Shop App',
+		description:
+			'A tech-related e-commerce shop page that even guests can visit, allowing users to explore products, apply category filters, and see more products with pagination, which is key for performance in e-commerce projects.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'payloadcms',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'next',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: e_commerce,
+		source_code_link: 'https://github.com/exslym/ecommerce/',
+		website_link: 'https://e-commerce-exs.payloadcms.app/',
+	},
+	{
 		name: '3D Tiny World',
 		description:
 			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D-graphics and animations with ThreeJS, React and Tailwind.',
@@ -171,32 +198,6 @@ const projects = [
 		image: tiny_world_3d,
 		source_code_link: 'https://github.com/exslym/Tiny-World-3D/',
 		website_link: 'https://exslym.github.io/Tiny-World-3D/',
-	},
-	{
-		name: 'Cryptocurrency Prices',
-		description:
-			'A website version of mobile App created using the Flutter framework. The app provides real-time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
-		tags: [
-			{
-				name: 'dart',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'flutter',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'bloc',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'firebase',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: currency_list,
-		source_code_link: 'https://github.com/exslym/Crypto-Coins-List/',
-		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
 		name: 'Eventlify',
@@ -225,7 +226,7 @@ const projects = [
 		website_link: 'https://eventlify-exs.vercel.app/',
 	},
 	{
-		name: '3D T-Shirts Design with AI',
+		name: '3D T-Shirts AI Design',
 		description:
 			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
 		tags: [
@@ -249,6 +250,32 @@ const projects = [
 		image: ai_3d_tshirts,
 		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
+	},
+	{
+		name: 'Cryptocurrency Prices',
+		description:
+			'A website version of mobile App created using the Flutter framework. The app provides real-time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
+		tags: [
+			{
+				name: 'dart',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'flutter',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'bloc',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'firebase',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: currency_list,
+		source_code_link: 'https://github.com/exslym/Crypto-Coins-List/',
+		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
 		name: 'AI Article Summarizer',
