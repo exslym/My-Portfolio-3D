@@ -465,7 +465,7 @@ const socials = [
 	{
 		name: 'discord',
 		icon: discord,
-		link: `https://github.com/${discordUser}/`,
+		link: `https://discordapp.com/users/${discordUser}/`,
 	},
 ];
 
