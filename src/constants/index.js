@@ -326,8 +326,8 @@ const projects = [
 			},
 		],
 		image: dcreative,
-		source_code_link: 'https://github.com/exslym/D-Creative-Studio/',
-		website_link: 'https://exslym.github.io/D-Creative-Studio/',
+		source_code_link: 'https://github.com/exslym/d-creative-studio/',
+		website_link: 'https://exslym.github.io/d-creative-studio/',
 	},
 	{
 		name: 'Space Invaders [Game]',
