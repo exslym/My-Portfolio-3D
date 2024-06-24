@@ -147,32 +147,32 @@ const experiences = [
 ];
 
 const projects = [
-	{
-		name: 'E-Commerce Shop App',
-		description:
-			'A tech-related e-commerce shop page that even guests can visit, allowing users to explore products, apply category filters, and see more products with pagination, which is key for performance in e-commerce projects.',
-		tags: [
-			{
-				name: 'typescript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'react',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'payloadcms',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'next',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: e_commerce,
-		source_code_link: 'https://github.com/exslym/ecommerce/',
-		website_link: 'https://e-commerce-exs.payloadcms.app/',
-	},
+	// {
+	// 	name: 'E-Commerce Shop App',
+	// 	description:
+	// 		'A tech-related e-commerce shop page that even guests can visit, allowing users to explore products, apply category filters, and see more products with pagination, which is key for performance in e-commerce projects.',
+	// 	tags: [
+	// 		{
+	// 			name: 'typescript',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'react',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'payloadcms',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'next',
+	// 			color: 'yellow-text-gradient',
+	// 		},
+	// 	],
+	// 	image: e_commerce,
+	// 	source_code_link: 'https://github.com/exslym/ecommerce/',
+	// 	website_link: 'https://e-commerce-exs.payloadcms.app/',
+	// },
 	{
 		name: '3D Tiny World',
 		description:
@@ -278,6 +278,28 @@ const projects = [
 		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
 	{
+		name: 'ChatGPT App (web vers.)',
+		description:
+			'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+		tags: [
+			{
+				name: 'dart',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'flutter',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'openai-api',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: chat_gpt,
+		source_code_link: 'https://github.com/exslym/ChatGPT_App/',
+		website_link: 'https://chat-gpt-app-exslym.vercel.app/',
+	},
+	{
 		name: 'AI Article Summarizer',
 		description:
 			'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
@@ -381,28 +403,6 @@ const projects = [
 		source_code_link: 'https://github.com/exslym/2048-Game/',
 		website_link: 'https://exslym.github.io/2048-Game/',
 	},
-	// {
-	// 	name: 'ChatGPT App (web vers.)',
-	// 	description:
-	// 		'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
-	// 	tags: [
-	// 		{
-	// 			name: 'dart',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'flutter',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'openai-api',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 	],
-	// 	image: chat_gpt,
-	// 	source_code_link: 'https://github.com/exslym/ChatGPT_App/',
-	// 	website_link: 'https://chat-gpt-app-kohl.vercel.app/',
-	// },
 	// {
 	// 	name: 'Social Network',
 	// 	description:

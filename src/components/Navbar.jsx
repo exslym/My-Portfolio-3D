@@ -25,7 +25,7 @@ const Navbar = () => {
 				>
 					<img src={logo} alt='logo' className='w-10 h-10 rounded-full object-contain mr-1' />
 					<p className='flex text-white text-[18px] font-bold cursor-pointer hover:text-primary'>
-						Andrei&ensp;<span className='sm:block hidden'>Tsyplukhin</span>
+						Andrés&ensp;<span className='sm:block hidden'>Chiplujin</span>
 					</p>
 				</Link>
 				<ul className='list-none hidden sm:flex flex-row gap-10'>
