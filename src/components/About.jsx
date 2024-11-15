@@ -18,9 +18,11 @@ const About = () => {
 			>
 				Experienced and&nbsp;results&#8209;driven Frontend Developer with 5&nbsp;years
 				of&nbsp;expertise in&nbsp;JavaScript, TypeScript, and&nbsp;advanced libraries like React,
-				NextJS, and&nbsp;ThreeJS. Known for&nbsp;delivering interactive and&nbsp;user&#8209;focused
-				solutions, I&nbsp;have a&nbsp;strong track record of&nbsp;enhancing user engagement
-				and&nbsp;optimizing frontend performance.
+				NextJS, and&nbsp;ThreeJS.
+				<br />
+				Known for&nbsp;delivering interactive and&nbsp;user&#8209;focused solutions, I&nbsp;have
+				a&nbsp;strong track record of&nbsp;enhancing user engagement and&nbsp;optimizing frontend
+				performance.
 				<br />
 				I&nbsp;am passionate about leveraging the&nbsp;latest technologies to&nbsp;create dynamic
 				digital experiences.
