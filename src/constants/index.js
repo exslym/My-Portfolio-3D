@@ -12,6 +12,7 @@ import {
 	doctoratwork1,
 	e_commerce,
 	eventlify,
+	exs_directory,
 	flutter,
 	freelance,
 	game_2048,
@@ -65,8 +66,8 @@ const technologies = [
 		icon: reactjs,
 	},
 	{
-		name: 'Flutter',
-		icon: flutter,
+		name: 'Tailwind',
+		icon: tailwind,
 	},
 	{
 		name: 'ThreeJS',
@@ -89,8 +90,8 @@ const technologies = [
 	// 	icon: css,
 	// },
 	// {
-	// 	name: 'Tailwind',
-	// 	icon: tailwind,
+	// 	name: 'Flutter',
+	// 	icon: flutter,
 	// },
 	// {
 	// 	name: 'git',
@@ -112,10 +113,10 @@ const experiences = [
 		company_name: 'Doctor At Work',
 		icon: doctoratwork,
 		iconBg: '#383E56',
-		date: 'September 2020 - Present',
+		date: 'September 2020 - September 2024',
 		points: [
-			"Developed and maintained over 150 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns",
-			'Created dozens of mini-games, chat bots, quizzes and interactive educational sites with complex animated and interactive elements and detailings using JavaScript, TypeScript and frontend frameworks like React, Astro, Qwik, ThreeJS, etc.',
+			"Developed and maintained over 150 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns.",
+			'Created dozens of mini-games, chat bots, quizzes and interactive educational sites with complex animated and interactive elements and detailings using JavaScript, TypeScript and frontend frameworks like React, Next, Astro, Qwik, ThreeJS, etc.',
 			"Adapted the code of third-party client projects made in React framework, revised for publication on own or the company's platforms.",
 			'Collaborated with cross-functional teams including designers, project managers, and other developers to create high-quality products.',
 			'Formed and structured development standards to automate routine tasks, carried out systematic code reviews, created needed templates, developed and implemented various plugins, etc.',
@@ -140,7 +141,7 @@ const experiences = [
 		iconBg: '#383E56',
 		date: 'January 2019 - September 2020',
 		points: [
-			'Developed and maintained over 20 websites using JavaScript, HTML5, CSS3, SASS/SCSS and other related technologies',
+			'Developed and maintained over 30 websites using JavaScript, React, HTML5, CSS3, SASS/SCSS and other related technologies.',
 			'Implemented responsive adaptive design and ensured cross-browser compatibility.',
 		],
 	},
@@ -252,6 +253,32 @@ const projects = [
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
 	},
 	{
+		name: 'Startups Directory',
+		description:
+			'A web application, which is a platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, explore other pitches, and gain exposure through a clean minimalist design for a seamless user experience.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react19',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'next15',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: exs_directory,
+		source_code_link: 'https://github.com/exslym/ex_directory',
+		website_link: 'https://ex-directory.vercel.app/',
+	},
+	{
 		name: 'Cryptocurrency Prices',
 		description:
 			'A website version of mobile App created using the Flutter framework. The app provides real-time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
@@ -298,32 +325,6 @@ const projects = [
 		image: chat_gpt,
 		source_code_link: 'https://github.com/exslym/ChatGPT_App/',
 		website_link: 'https://chat-gpt-app-exslym.vercel.app/',
-	},
-	{
-		name: 'AI Article Summarizer',
-		description:
-			'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
-		tags: [
-			{
-				name: 'javascript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'react',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'tailwindcss',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'openai',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: ai_summarizer,
-		source_code_link: 'https://github.com/exslym/AI-Summarizer/',
-		website_link: 'https://exslym.github.io/AI-Summarizer/',
 	},
 	{
 		name: 'D-Creative Studio',
@@ -403,6 +404,32 @@ const projects = [
 		source_code_link: 'https://github.com/exslym/2048-Game/',
 		website_link: 'https://exslym.github.io/2048-Game/',
 	},
+	// {
+	// 	name: 'AI Article Summarizer',
+	// 	description:
+	// 		'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
+	// 	tags: [
+	// 		{
+	// 			name: 'javascript',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'react',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'tailwindcss',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'openai',
+	// 			color: 'yellow-text-gradient',
+	// 		},
+	// 	],
+	// 	image: ai_summarizer,
+	// 	source_code_link: 'https://github.com/exslym/AI-Summarizer/',
+	// 	website_link: 'https://exslym.github.io/AI-Summarizer/',
+	// },
 	// {
 	// 	name: 'Social Network',
 	// 	description:

@@ -36,6 +36,7 @@ import currency_list from './currency_list.jpg';
 import dcreative from './dcreative.jpg';
 import e_commerce from './e_commerce.jpg';
 import eventlify from './eventlify.jpg';
+import exs_directory from './exs_directory.jpg';
 import game_2048 from './game_2048.jpg';
 import social_network from './social_network.jpg';
 import space_invaders from './space_invaders.jpg';
@@ -61,6 +62,7 @@ export {
 	doctoratwork1,
 	e_commerce,
 	eventlify,
+	exs_directory,
 	figma,
 	flutter,
 	freelance,

@@ -16,13 +16,18 @@ const About = () => {
 				variants={fadeIn('', '', 0.2, 1)}
 				className='mt-4 text-primary text-[17px] max-w-3xl leading-[30px]'
 			>
-				I&rsquo;m a&nbsp;skilled frontend developer with over 3&nbsp;years of&nbsp;experience
-				in&nbsp;TypeScript, JavaScript and Dart and also expertise in&nbsp;frameworks like React,
-				Next, Astro, Qwik, Three.js and Flutter.
+				Experienced and&nbsp;results&#8209;driven Frontend Developer with 5&nbsp;years
+				of&nbsp;expertise in&nbsp;JavaScript, TypeScript, and&nbsp;advanced libraries like React,
+				NextJS, and&nbsp;ThreeJS. Known for&nbsp;delivering interactive and&nbsp;user&#8209;focused
+				solutions, I&nbsp;have a&nbsp;strong track record of&nbsp;enhancing user engagement
+				and&nbsp;optimizing frontend performance.
 				<br />
-				I'm a&nbsp;quick learner and&nbsp;collaborate closely with&nbsp;clients to&nbsp;create
-				efficient, scalable and&nbsp;user&#8209;friendly solutions that solve real&#8209;world
-				problems. Let's work together to&nbsp;bring your ideas to&nbsp;life!
+				I&nbsp;am passionate about leveraging the&nbsp;latest technologies to&nbsp;create dynamic
+				digital experiences.
+				<br />
+				With a&nbsp;strong eye for&nbsp;detail and&nbsp;a&nbsp;commitment to&nbsp;quality,
+				I&nbsp;thrive on&nbsp;crafting visually appealing and&nbsp;highly functional web solutions
+				that meet both business and&nbsp;user needs.
 			</motion.p>
 		</>
 	);
