@@ -115,11 +115,12 @@ const experiences = [
 		iconBg: '#383E56',
 		date: 'September 2020 - September 2024',
 		points: [
-			"Developed and maintained over 150 commercial websites, banners and emails with responsive design and cross-browser compatibility, as well as other visual materials as a part of clients' advertising campaigns.",
-			'Created dozens of mini-games, chat bots, quizzes and interactive educational sites with complex animated and interactive elements and detailings using JavaScript, TypeScript and frontend frameworks like React, Next, Astro, Qwik, ThreeJS, etc.',
-			"Adapted the code of third-party client projects made in React framework, revised for publication on own or the company's platforms.",
-			'Collaborated with cross-functional teams including designers, project managers, and other developers to create high-quality products.',
-			'Formed and structured development standards to automate routine tasks, carried out systematic code reviews, created needed templates, developed and implemented various plugins, etc.',
+			'Developed and supported over 150 websites and web applications, as well as other visual materials for advertising campaigns using Figma design layouts using React, Next, JavaScript, HTML, CSS.',
+			"Adapted and refined the code of third-party client projects made in React framework, revised for publication on the company's platforms.",
+			'By modernizing layout templates for pharmaceutical advertising projects, I increased the productivity of my team by 25%, which allowed us to implement projects faster and more efficiently.',
+			'Implemented a systematic code review process that reduced the number of errors and reduced project deadlines by 20%, which in turn led to an increase in the profitability of the organization.',
+			'Collaborated with cross-functional teams, including designers, project managers, and other developers to create high-quality products.',
+			'Worked with Vite, Webpack builders, used in projects: JavaScript, React, Next, ThreeJS.',
 		],
 	},
 	// {
