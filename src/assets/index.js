@@ -14,6 +14,7 @@ import flutter from './tech/flutter.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
+import nextjs from './tech/nextjs.svg';
 import qwik from './tech/qwik.png';
 import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
@@ -77,6 +78,7 @@ export {
 	logo,
 	menu,
 	mobile,
+	nextjs,
 	qwik,
 	reactjs,
 	redux,

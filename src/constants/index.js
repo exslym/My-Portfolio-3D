@@ -21,6 +21,7 @@ import {
 	html,
 	javascript,
 	linkedin,
+	nextjs,
 	qwik,
 	reactjs,
 	social_network,
@@ -54,16 +55,20 @@ export const navLinks = [
 
 const technologies = [
 	{
+		name: 'React',
+		icon: reactjs,
+	},
+	{
+		name: 'NextJS',
+		icon: nextjs,
+	},
+	{
 		name: 'JavaScript',
 		icon: javascript,
 	},
 	{
 		name: 'TypeScript',
 		icon: typescript,
-	},
-	{
-		name: 'React',
-		icon: reactjs,
 	},
 	{
 		name: 'Tailwind',
@@ -74,13 +79,13 @@ const technologies = [
 		icon: threejs,
 	},
 	{
-		name: 'Qwik',
-		icon: qwik,
-	},
-	{
 		name: 'Astro',
 		icon: astro,
 	},
+	// {
+	// 	name: 'Qwik',
+	// 	icon: qwik,
+	// },
 	// {
 	// 	name: 'HTML5',
 	// 	icon: html,
@@ -107,13 +112,61 @@ const technologies = [
 	},
 ];
 
+// Duration:
+let date1 = new Date(2024, 8, 10);
+let date2 = new Date();
+let year1 = date1.getFullYear();
+let year2 = date2.getFullYear();
+let month1 = date1.getMonth();
+let month2 = date2.getMonth();
+if (month1 === 0) {
+	month1++;
+	month2++;
+}
+let duration;
+let months = (year2 - year1) * 12 + (month2 - month1) + 1;
+let years = Math.floor(months / 12);
+let diff = Math.abs(month2 - month1 + 1);
+
+if (months > 12) {
+	if (years > 1) {
+		if (diff > 1) {
+			duration = `${years} yrs ${diff} mos`;
+		} else {
+			duration = `${years} yrs ${diff} mo`;
+		}
+	} else {
+		if (diff > 1) {
+			duration = `${years} yr ${diff} mos`;
+		} else {
+			duration = `${years} yr ${diff} mo`;
+		}
+	}
+} else {
+	if (diff > 1) {
+		duration = `${months} mos`;
+	} else {
+		duration = `${months} mo`;
+	}
+}
+
 const experiences = [
+	{
+		title: 'Senior Frontend Developer',
+		company_name: 'Freelance | Self-employed',
+		icon: freelance,
+		iconBg: '#383E56',
+		date: `September 2024 - Present (${duration})`,
+		points: [
+			'Frontend Development of websites and web applications using leading-edge libraries such as React, Next, and related technologies.',
+		],
+	},
 	{
 		title: 'Frontend Developer',
 		company_name: 'Doctor At Work',
 		icon: doctoratwork,
 		iconBg: '#383E56',
-		date: 'September 2020 - September 2024',
+		date: 'September 2020 - September 2024 (4 yrs)',
 		points: [
 			'Developed and supported over 150 websites and web applications, as well as other visual materials for advertising campaigns using Figma design layouts using React, Next, JavaScript, HTML, CSS.',
 			"Adapted and refined the code of third-party client projects made in React framework, revised for publication on the company's platforms.",
@@ -140,7 +193,7 @@ const experiences = [
 		company_name: 'Freelance | Self-employed',
 		icon: freelance,
 		iconBg: '#383E56',
-		date: 'January 2019 - September 2020',
+		date: 'January 2019 - September 2020  (1 yr 9 mos)',
 		points: [
 			'Developed and maintained over 30 websites using JavaScript, React, HTML5, CSS3, SASS/SCSS and other related technologies.',
 			'Implemented responsive adaptive design and ensured cross-browser compatibility.',
@@ -176,16 +229,16 @@ const projects = [
 	// 	website_link: 'https://e-commerce-exs.payloadcms.app/',
 	// },
 	{
-		name: '3D Tiny World',
+		name: 'Startups Directory',
 		description:
-			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D-graphics and animations with ThreeJS, React and Tailwind.',
+			'A web application, which is a platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, explore other pitches, and gain exposure through a clean minimalist design for a seamless user experience.',
 		tags: [
 			{
-				name: 'javascript',
+				name: 'typescript',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'react',
+				name: 'react19',
 				color: 'green-text-gradient',
 			},
 			{
@@ -193,13 +246,13 @@ const projects = [
 				color: 'pink-text-gradient',
 			},
 			{
-				name: 'threejs',
+				name: 'next15',
 				color: 'yellow-text-gradient',
 			},
 		],
-		image: tiny_world_3d,
-		source_code_link: 'https://github.com/exslym/Tiny-World-3D/',
-		website_link: 'https://exslym.github.io/Tiny-World-3D/',
+		image: exs_directory,
+		source_code_link: 'https://github.com/exslym/ex_directory',
+		website_link: 'https://ex-directory.vercel.app/',
 	},
 	{
 		name: 'Eventlify',
@@ -228,6 +281,32 @@ const projects = [
 		website_link: 'https://eventlify-exs.vercel.app/',
 	},
 	{
+		name: '3D Tiny World',
+		description:
+			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D-graphics and animations with ThreeJS, React and Tailwind.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'threejs',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: tiny_world_3d,
+		source_code_link: 'https://github.com/exslym/Tiny-World-3D/',
+		website_link: 'https://exslym.github.io/Tiny-World-3D/',
+	},
+	{
 		name: '3D T-Shirts AI Design',
 		description:
 			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
@@ -252,32 +331,6 @@ const projects = [
 		image: ai_3d_tshirts,
 		source_code_link: 'https://github.com/exslym/3D-AI-Project/',
 		website_link: 'https://exslym.github.io/3D-AI-Project/',
-	},
-	{
-		name: 'Startups Directory',
-		description:
-			'A web application, which is a platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, explore other pitches, and gain exposure through a clean minimalist design for a seamless user experience.',
-		tags: [
-			{
-				name: 'typescript',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'react19',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'tailwindcss',
-				color: 'pink-text-gradient',
-			},
-			{
-				name: 'next15',
-				color: 'yellow-text-gradient',
-			},
-		],
-		image: exs_directory,
-		source_code_link: 'https://github.com/exslym/ex_directory',
-		website_link: 'https://ex-directory.vercel.app/',
 	},
 	{
 		name: 'Cryptocurrency Prices',
