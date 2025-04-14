@@ -4,10 +4,10 @@ import { BallCanvas } from './canvas';
 
 const Tech = () => {
 	return (
-		<div className='flex flex-row flex-wrap md:justify-between justify-center xl:max-w-full lg:max-w-xl sm:max-w-xl mx-auto gap-6 xs:-mt-4 xs:-mb-4 sm:-mt-6 sm:-mb-6 lg:-mt-10 -mt-4 lg:-mb-10 -mb-0'>
+		<div className='flex flex-row flex-wrap justify-between max-w-80 xl:max-w-full md:max-w-lg xs:max-w-sm mx-auto gap-5 xs:-mt-4 xs:-mb-4 sm:-mt-6 sm:-mb-6 lg:-mt-10 -mt-4 lg:-mb-10 -mb-0'>
 			{technologies.map(technology => (
 				<div
-					className='xs:w-28 md:w-[120px] w-[70px] xs:h-28 md:h-[120px] h-[70px]'
+					className='w-[60px] xs:w-20 md:w-28 h-[60px] xs:h-20 md:h-28 '
 					key={technology.name}
 				>
 					<BallCanvas icon={technology.icon} />

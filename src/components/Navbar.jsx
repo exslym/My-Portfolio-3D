@@ -26,7 +26,7 @@ const Navbar = () => {
 					<img
 						src={logo}
 						alt='logo'
-						className='w-10 h-10 rounded-full object-contain mr-1'
+						className='w-8 xs:w-10 h-8 xs:h-10 rounded-full object-contain mr-1'
 					/>
 					<p className='flex text-white text-lg font-bold cursor-pointer hover:text-primary'>
 						Andrés&ensp;<span className='sm:block hidden'>Chiplujin</span>
