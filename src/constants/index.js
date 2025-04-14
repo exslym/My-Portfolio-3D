@@ -1,37 +1,26 @@
 import {
 	ai_3d_tshirts,
-	ai_summarizer,
 	astro,
-	chat_gpt,
-	cns_portfolio,
-	css,
 	currency_list,
 	dcreative,
 	discord,
 	doctoratwork,
-	doctoratwork1,
-	e_commerce,
 	eventlify,
 	exs_directory,
-	flutter,
 	freelance,
 	game_2048,
-	git,
 	github_alt,
-	html,
 	javascript,
 	linkedin,
 	nextjs,
-	qwik,
 	reactjs,
-	social_network,
 	space_invaders,
 	tailwind,
 	threejs,
 	tiny_world_3d,
+	tldraw_editor,
 	typescript,
 	vite,
-	webpack,
 } from '../assets';
 
 const githubUser = import.meta.env.VITE_APP_GITHUB_USER;
@@ -82,30 +71,6 @@ const technologies = [
 		name: 'Astro',
 		icon: astro,
 	},
-	// {
-	// 	name: 'Qwik',
-	// 	icon: qwik,
-	// },
-	// {
-	// 	name: 'HTML5',
-	// 	icon: html,
-	// },
-	// {
-	// 	name: 'CSS3',
-	// 	icon: css,
-	// },
-	// {
-	// 	name: 'Flutter',
-	// 	icon: flutter,
-	// },
-	// {
-	// 	name: 'git',
-	// 	icon: git,
-	// },
-	// {
-	// 	name: 'Webpack',
-	// 	icon: webpack,
-	// },
 	{
 		name: 'Vite',
 		icon: vite,
@@ -176,18 +141,6 @@ const experiences = [
 			'Worked with Vite, Webpack builders, used in projects: JavaScript, React, Next, ThreeJS.',
 		],
 	},
-	// {
-	// 	title: 'Web Developer',
-	// 	company_name: 'Doctor At Work',
-	// 	icon: doctoratwork1,
-	// 	iconBg: '#E6DEDD',
-	// 	date: 'September 2020 - February 2021',
-	// 	points: [
-	// 		'Developing and maintaining websites using JavaScript, HTML5, CSS3, SCSS, Canvas and other related technologies.',
-	// 		'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-	// 		'Implementing responsive design and ensuring cross-browser compatibility.',
-	// 	],
-	// },
 	{
 		title: 'Frontend Developer',
 		company_name: 'Freelance | Self-employed',
@@ -202,32 +155,6 @@ const experiences = [
 ];
 
 const projects = [
-	// {
-	// 	name: 'E-Commerce Shop App',
-	// 	description:
-	// 		'A tech-related e-commerce shop page that even guests can visit, allowing users to explore products, apply category filters, and see more products with pagination, which is key for performance in e-commerce projects.',
-	// 	tags: [
-	// 		{
-	// 			name: 'typescript',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'react',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'payloadcms',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'next',
-	// 			color: 'yellow-text-gradient',
-	// 		},
-	// 	],
-	// 	image: e_commerce,
-	// 	source_code_link: 'https://github.com/exslym/ecommerce/',
-	// 	website_link: 'https://e-commerce-exs.payloadcms.app/',
-	// },
 	{
 		name: 'Startups Directory',
 		description:
@@ -253,6 +180,32 @@ const projects = [
 		image: exs_directory,
 		source_code_link: 'https://github.com/exslym/ex_directory',
 		website_link: 'https://ex-directory.vercel.app/',
+	},
+	{
+		name: 'Tldraw Editor',
+		description:
+			'This application offers seamless drawing, shape modification, AI-powered shape recognition, and the ability to save projects to a gallery for future interaction and editing, providing a smooth and user-friendly experience.',
+		tags: [
+			{
+				name: 'typescript',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'tailwindcss',
+				color: 'pink-text-gradient',
+			},
+			{
+				name: 'next15',
+				color: 'yellow-text-gradient',
+			},
+		],
+		image: tldraw_editor,
+		source_code_link: 'https://github.com/exslym/tldraw-editor',
+		website_link: 'https://tldraw-editor.vercel.app/',
 	},
 	{
 		name: 'Eventlify',
@@ -358,28 +311,28 @@ const projects = [
 		source_code_link: 'https://github.com/exslym/Crypto-Coins-List/',
 		website_link: 'https://cryptocurrency-prices-exslym.vercel.app/',
 	},
-	{
-		name: 'ChatGPT App (web vers.)',
-		description:
-			'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
-		tags: [
-			{
-				name: 'dart',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'flutter',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'openai-api',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: chat_gpt,
-		source_code_link: 'https://github.com/exslym/ChatGPT_App/',
-		website_link: 'https://chat-gpt-app-exslym.vercel.app/',
-	},
+	// {
+	// 	name: 'ChatGPT App (web vers.)',
+	// 	description:
+	// 		'A website version of mobile app ChatGPT project where you can interact with openAI chatbot based on gpt-3.5-turbo-0301 model, also you can choose other model on the fly.',
+	// 	tags: [
+	// 		{
+	// 			name: 'dart',
+	// 			color: 'blue-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'flutter',
+	// 			color: 'green-text-gradient',
+	// 		},
+	// 		{
+	// 			name: 'openai-api',
+	// 			color: 'pink-text-gradient',
+	// 		},
+	// 	],
+	// 	image: chat_gpt,
+	// 	source_code_link: 'https://github.com/exslym/ChatGPT_App/',
+	// 	website_link: 'https://chat-gpt-app-exslym.vercel.app/',
+	// },
 	{
 		name: 'D-Creative Studio',
 		description:
@@ -442,7 +395,7 @@ const projects = [
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'htnl',
+				name: 'html',
 				color: 'green-text-gradient',
 			},
 			{
@@ -458,78 +411,6 @@ const projects = [
 		source_code_link: 'https://github.com/exslym/2048-Game/',
 		website_link: 'https://exslym.github.io/2048-Game/',
 	},
-	// {
-	// 	name: 'AI Article Summarizer',
-	// 	description:
-	// 		'This minimalistic cozy color app is an AI article summarizer that transforms lengthy articles into clear and concise summaries, using an article extractor and summarizer by RapidAPI, powered by openAI GPT-4.',
-	// 	tags: [
-	// 		{
-	// 			name: 'javascript',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'react',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'tailwindcss',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'openai',
-	// 			color: 'yellow-text-gradient',
-	// 		},
-	// 	],
-	// 	image: ai_summarizer,
-	// 	source_code_link: 'https://github.com/exslym/AI-Summarizer/',
-	// 	website_link: 'https://exslym.github.io/AI-Summarizer/',
-	// },
-	// {
-	// 	name: 'Social Network',
-	// 	description:
-	// 		'A social network project is a dynamic web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting.',
-	// 	// description:
-	// 	// 'A social network project is a web application (SPA) that allows users to search and interact with each other by liking, commenting on posts or chatting. ReactJS have been used as the primary front-end framework to create dynamic and interactive user interfaces that update in real-time.',
-	// 	tags: [
-	// 		{
-	// 			name: 'typescript',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'react',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'ant-design',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 	],
-	// 	image: social_network,
-	// 	source_code_link: 'https://github.com/exslym/My-Social-Network/',
-	// 	website_link: 'https://exslym.github.io/My-Social-Network/',
-	// },
-	// {
-	// 	name: 'CNS-Portfolio',
-	// 	description:
-	// 		"The multi-page website with interactive educational question-answer quiz for physicians that helps to learn about treatment options and appropriate drug prescribing based on patient's history and various health conditions.",
-	// 	tags: [
-	// 		{
-	// 			name: 'javascript',
-	// 			color: 'blue-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'multipage',
-	// 			color: 'green-text-gradient',
-	// 		},
-	// 		{
-	// 			name: 'scss',
-	// 			color: 'pink-text-gradient',
-	// 		},
-	// 	],
-	// 	image: cns_portfolio,
-	// 	source_code_link: 'https://github.com/exslym/CNS-Portfolio/',
-	// 	website_link: 'https://exslym.github.io/CNS-Portfolio/',
-	// },
 ];
 
 const socials = [

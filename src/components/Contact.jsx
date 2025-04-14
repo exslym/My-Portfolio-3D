@@ -75,78 +75,88 @@ const Contact = () => {
 		<div className='xl:mt-12 lg:flex-row flex-col-reverse flex justify-center items-center gap-8 overflow-hidden'>
 			<motion.div
 				variants={slideIn('left', 'tween', 0.2, 1)}
-				className='lg:w-2/5 bg-transparent rounded-2xl p-[1px]
+				className='lg:w-2/5 bg-transparent rounded-2xl p-px
 				w-full'
 			>
 				<p className={styles.sectionSubText}>Get in touch</p>
 				<h3 className={styles.sectionHeadText}>Contact.</h3>
 
-				<form ref={formRef} onSubmit={handleSubmit} className='mt-10 flex flex-col gap-8'>
-					<label className='flex flex-col'>
-						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
-							Your name
-						</span>
-						<input
-							type='text'
-							name='name'
-							autoComplete='off'
-							required
-							value={form.name}
-							onChange={handleChange}
-							placeholder="What's your name?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
-						/>
-					</label>
+				<form
+					ref={formRef}
+					onSubmit={handleSubmit}
+					className='mt-10 flex flex-col gap-8'
+				>
+					<fieldset className='flex flex-col gap-8'>
+						<legend className='sr-only'>Contact Form</legend>
 
-					<label className='flex flex-col'>
-						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
-							Your email
-						</span>
-						<input
-							type='email'
-							name='email'
-							autoComplete='off'
-							required
-							value={form.email}
-							onChange={handleChange}
-							placeholder="What's your email?"
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
-						/>
-					</label>
+						<label htmlFor='name' className='flex flex-col'>
+							<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+								Your name
+							</span>
+							<input
+								id='name'
+								type='text'
+								name='name'
+								autoComplete='off'
+								required
+								value={form.name}
+								onChange={handleChange}
+								placeholder="What's your name?"
+								className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-0 shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							/>
+						</label>
 
-					<label className='flex flex-col'>
-						<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
-							Your message
-						</span>
-						<textarea
-							rows='7'
-							name='message'
-							autoComplete='off'
-							required
-							value={form.message}
-							onChange={handleChange}
-							placeholder='What do you want to say?'
-							className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal resize-none rounded-lg border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
-						/>
-					</label>
+						<label htmlFor='email' className='flex flex-col'>
+							<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+								Your email
+							</span>
+							<input
+								id='email'
+								type='email'
+								name='email'
+								autoComplete='off'
+								required
+								value={form.email}
+								onChange={handleChange}
+								placeholder="What's your email?"
+								className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal rounded-lg border-none outline-0 shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							/>
+						</label>
 
-					<button
-						type='submit'
-						className={
-							loading
-								? `py-3 px-8 bg-tertiary w-fit text-secondary font-medium rounded-xl pointer-events-none border-none outline-none`
-								: `py-3 px-8 bg-tertiary w-fit text-white font-medium rounded-xl pointer-events-auto border-none outline-[0px] shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn`
-						}
-					>
-						{loading ? 'Sending...' : 'Send'}
-					</button>
+						<label htmlFor='message' className='flex flex-col'>
+							<span className='text-white font-medium m-auto w-full max-w-inputWidth mb-4'>
+								Your message
+							</span>
+							<textarea
+								id='message'
+								rows='7'
+								name='message'
+								autoComplete='off'
+								required
+								value={form.message}
+								onChange={handleChange}
+								placeholder='What do you want to say?'
+								className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white font-normal resize-none rounded-lg border-none outline-0 shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn w-full max-w-inputWidth m-auto'
+							/>
+						</label>
+
+						<button
+							type='submit'
+							className={
+								loading
+									? 'py-3 px-8 bg-tertiary w-fit text-secondary font-medium rounded-xl pointer-events-none border-none outline-none'
+									: 'py-3 px-8 bg-tertiary w-fit text-white font-medium rounded-xl pointer-events-auto border-none outline-0 shadow-inputsOff hover:shadow-inputsOn focus:shadow-inputsOn'
+							}
+						>
+							{loading ? 'Sending...' : 'Send'}
+						</button>
+					</fieldset>
 				</form>
 			</motion.div>
 
 			<motion.div
 				variants={slideIn('right', 'tween', 0.2, 1)}
-				className='lg:w-3/5 xl:h-[560px] lg:h-[500px] md:h-[460px] sm:h-[380px] h-[280px] 
-				w-full'
+				className='lg:w-3/5 w-full xl:h-[560px] lg:h-[500px] md:h-[460px] sm:h-[380px] h-[280px]'
 			>
 				<EarthCanvas />
 			</motion.div>

@@ -4,7 +4,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import CanvasLoader from '../Loader';
 // import * as THREE from 'three';
 
-const Computers = ({ isMobile }) => {
+const Computer = ({ isMobile }) => {
 	const computer = useGLTF('./desktop_pc/scene.gltf');
 
 	// const renderer = new THREE.WebGLRenderer();
@@ -36,17 +36,17 @@ const Computers = ({ isMobile }) => {
 			/>
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.65 : 0.75}
+				scale={isMobile ? 0.6 : 0.75}
 				// scale={isMobile ? 0.65 : 0.75}
 				// position={isMobile ? [0, -1.5, -1] : [0, -3.25, -1.3]}
-				position={isMobile ? [0, -1.5, -1] : [0, -2.8, -1.35]}
+				position={isMobile ? [0, -2.5, -1] : [0, -2.8, -1.35]}
 				rotation={[0, -0.5, -0.1]}
 			/>
 		</mesh>
 	);
 };
 
-const ComputersCanvas = () => {
+const ComputerCanvas = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -89,7 +89,7 @@ const ComputersCanvas = () => {
 					// minAzimuthAngle={-Math.PI * 1.85}
 					// maxAzimuthAngle={Math.PI / 1.75}
 				/>
-				<Computers isMobile={isMobile} />
+				<Computer isMobile={isMobile} />
 			</Suspense>
 
 			<Preload all />
@@ -97,4 +97,4 @@ const ComputersCanvas = () => {
 	);
 };
 
-export default ComputersCanvas;
+export default ComputerCanvas;

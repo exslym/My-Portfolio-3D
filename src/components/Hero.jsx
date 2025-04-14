@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputerCanvas } from './canvas';
 
 const Hero = () => {
 	return (
-		<section className='relative w-full h-screen mx-auto'>
+		<section className='relative w-full h-svh xs:h-screen mx-auto'>
 			<div
-				className={`${styles.paddingX} absolute inset-0 lg:top-[100px] md:top-[90px] xs:top-[90px] top-[100px] max-w-7xl mx-auto flex felx-row items-start gap-5 h-max`}
+				className={`${styles.paddingX} absolute inset-0 top-24 max-w-7xl mx-auto flex felx-row items-start gap-5 h-max`}
 			>
 				<div
 					className='flex flex-col justify-center items-center 
@@ -25,19 +25,22 @@ const Hero = () => {
 						Hi, I'm <span className='text-clr_blue'>Andrés</span>
 					</h1>
 					<p
-						className={`${styles.heroSubText} relative z-10 mt-2 text-white-100 md:max-w-[640px] max-w-[460px] `}
+						className={`${styles.heroSubText} relative z-10 mt-2 text-white-100 lg:max-w-2xl sm:max-w-xl xs:max-w-md`}
 					>
-						I'm an experienced Frontend Developer, <br />I also develop 3D visuals, user interfaces
+						I'm an&nbsp;experienced Frontend&nbsp;Developer, <br />
+						I&nbsp;also develop 3D&nbsp;visuals, user&nbsp;interfaces
 						and&nbsp;web applications.
 					</p>
 				</div>
 			</div>
-			<div className='max-h-[500px] xs:max-h-[600px] md:max-h-full h-full relative top-1/2 -translate-y-1/2'>
-				<ComputersCanvas />
+
+			<div className='h-1/2 sm:h-3/4 xl:h-full relative top-1/2 -translate-y-1/2'>
+				<ComputerCanvas />
 			</div>
-			<div className='absolute xs:bottom-4 bottom-32 w-full flex justify-center items-center z-10'>
+
+			<div className='absolute bottom-4 w-full flex justify-center items-center z-10'>
 				<a href='#about'>
-					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-primary flex justify-center items-start p-2'>
+					<div className='w-9 h-16 rounded-3xl border-4 border-primary flex justify-center items-start p-2'>
 						<motion.div
 							animate={{
 								y: [0, 24, 0],

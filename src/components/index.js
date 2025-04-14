@@ -3,22 +3,22 @@ import Contact from './Contact';
 import Experience from './Experience';
 import Hero from './Hero';
 import Navbar from './Navbar';
+import Projects from './Projects';
 import Socials from './Socials';
 import Tech from './Tech';
-import Works from './Works';
-import { BallCanvas, ComputersCanvas, EarthCanvas, SphereCanvas, StarsCanvas } from './canvas';
+import { BallCanvas, ComputerCanvas, EarthCanvas, StarsCanvas } from './canvas';
 
 export {
 	About,
 	BallCanvas,
-	ComputersCanvas,
+	ComputerCanvas,
 	Contact,
 	EarthCanvas,
 	Experience,
 	Hero,
 	Navbar,
+	Projects,
 	Socials,
 	StarsCanvas,
 	Tech,
-	Works,
 };

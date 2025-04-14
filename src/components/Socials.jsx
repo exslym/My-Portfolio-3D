@@ -4,10 +4,10 @@ import { SphereCanvas } from './canvas';
 
 const Socials = () => {
 	return (
-		<div className='flex flex-row flex-wrap justify-center max-w-[360px] mx-auto gap-6 -mt-0'>
+		<div className='flex flex-row flex-wrap justify-center max-w-96 mx-auto gap-6'>
 			{socials.map(social => (
 				<a
-					className='xs:w-24 w-[70px] xs:h-24 h-[70px]'
+					className='w-16 xs:w-24 h-16 xs:h-24'
 					key={social.name}
 					href={social.link}
 					target='_blank'

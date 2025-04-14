@@ -1,15 +1,19 @@
 import { PointMaterial, Points, Preload } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as random from 'maath/random/dist/maath-random.esm';
-import { Suspense, useRef, useState } from 'react';
+import { Suspense, useMemo, useRef } from 'react';
 
 const Stars = props => {
 	const ref = useRef();
-	const sphere = Number(random.inSphere(new Float32Array(4000), { radius: 1.8 }));
+	const sphere = useMemo(() => {
+		const positions = new Float32Array(4000 * 3); // 4000 точек, каждая с 3 координатами (x, y, z)
+		random.inSphere(positions, { radius: 2 });
+		return positions;
+	}, []);
 
 	useFrame((state, delta) => {
-		ref.current.rotation.x += delta / 18;
-		ref.current.rotation.y += delta / 36;
+		ref.current.rotation.x += delta / 100;
+		ref.current.rotation.y += delta / 150;
 	});
 
 	return (
@@ -18,7 +22,7 @@ const Stars = props => {
 				<PointMaterial
 					transparent
 					color='#f272c8'
-					size={0.003}
+					size={0.0025}
 					sizeAttenuation={true}
 					depthWrite={false}
 				/>
@@ -29,7 +33,7 @@ const Stars = props => {
 
 const StarsCanvas = () => {
 	return (
-		<div className='w-full h-auto absolute inset-0 z-[-1]'>
+		<div className='w-full h-auto absolute inset-0 -z-10'>
 			<Canvas camera={{ position: [0, 0, 1] }}>
 				<Suspense fallback={null}>
 					<Stars />
