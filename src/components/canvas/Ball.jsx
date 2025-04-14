@@ -1,4 +1,11 @@
-import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
+import {
+	Decal,
+	Environment,
+	Float,
+	OrbitControls,
+	Preload,
+	useTexture,
+} from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import CanvasLoader from '../Loader';
@@ -8,12 +15,27 @@ const Ball = props => {
 
 	return (
 		<Float speed={2} rotationIntensity={1.5} floatIntensity={3}>
-			<ambientLight intensity={0.5} />
-			<directionalLight position={[0, 0, 0.07]} />
+			<ambientLight intensity={1} />
+			<directionalLight position={[-5, 15, 30]} intensity={1.5} color='white' />
+
+			<Environment preset='warehouse' />
+
 			<mesh castShadow receiveShadow scale={2.7}>
 				<icosahedronGeometry args={[1, 1]} />
-				<meshStandardMaterial color='#fff8eb' polygonOffset polygonOffsetFactor={-5} flatShading />
-				<Decal position={[0, 0, 1]} rotation={[2 * Math.PI, 0, 6.26]} flatShading map={decal} />
+				<meshStandardMaterial
+					color='white'
+					metalness={0.4}
+					roughness={0.2}
+					polygonOffset
+					polygonOffsetFactor={-2}
+					flatShading
+				/>
+				<Decal
+					position={[0, 0, 1]}
+					rotation={[2 * Math.PI, 0, 6.26]}
+					flatShading
+					map={decal}
+				/>
 			</mesh>
 		</Float>
 	);

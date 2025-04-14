@@ -1,46 +1,39 @@
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import {
+	Environment,
+	OrbitControls,
+	Preload,
+	useGLTF,
+} from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
+import { EffectComposer, ToneMapping } from '@react-three/postprocessing';
 import React, { Suspense, useEffect, useState } from 'react';
 import CanvasLoader from '../Loader';
-// import * as THREE from 'three';
 
 const Computer = ({ isMobile }) => {
 	const computer = useGLTF('./desktop_pc/scene.gltf');
 
-	// const renderer = new THREE.WebGLRenderer();
-	// const speed = 0.01; // Change this value to adjust the speed of the animation
-	// let direction = 1;
-	// function animate() {
-	// 	requestAnimationFrame(animate);
-	// 	computer.rotation.x += speed;
-	// 	computer.rotation.y += speed;
-	// 	computer.position.z += speed * direction;
-	// 	if (computer.position.z > 5 || computer.position.z < -5) {
-	// 		direction = -direction;
-	// 	}
-	// 	renderer.render(computer);
-	// }
-	// animate();
-
 	return (
 		<mesh>
-			<hemisphereLight intensity={0.15} groundColor='black' />
-			<pointLight intensity={1} />
-			<spotLight
-				position={[-20, 50, 10]}
-				angle={0.12}
-				penumbra={1}
+			<hemisphereLight intensity={0.02} groundColor='black' skyColor='white' />
+			<ambientLight intensity={1} />
+			<pointLight intensity={2} />
+			<directionalLight
+				position={[0, 20, 10]}
 				intensity={1}
 				castShadow
-				shadow-mapSize={1024}
+				shadow-mapSize={[1024, 1024]}
+				shadow-bias={-0.001}
 			/>
+
+			<Environment preset='warehouse' />
+
 			<primitive
 				object={computer.scene}
 				scale={isMobile ? 0.6 : 0.75}
-				// scale={isMobile ? 0.65 : 0.75}
-				// position={isMobile ? [0, -1.5, -1] : [0, -3.25, -1.3]}
 				position={isMobile ? [0, -2.5, -1] : [0, -2.8, -1.35]}
-				rotation={[0, -0.5, -0.1]}
+				rotation={[0, -0.25, -0.09]}
+				castShadow
+				receiveShadow
 			/>
 		</mesh>
 	);
@@ -89,6 +82,15 @@ const ComputerCanvas = () => {
 					// minAzimuthAngle={-Math.PI * 1.85}
 					// maxAzimuthAngle={Math.PI / 1.75}
 				/>
+
+				<EffectComposer>
+					<ToneMapping
+						adaptive={false}
+						averageLuminance={0.25}
+						maxLuminance={2.5}
+					/>
+				</EffectComposer>
+
 				<Computer isMobile={isMobile} />
 			</Suspense>
 

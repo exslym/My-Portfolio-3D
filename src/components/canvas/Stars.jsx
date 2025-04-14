@@ -6,13 +6,13 @@ import { Suspense, useMemo, useRef } from 'react';
 const Stars = props => {
 	const ref = useRef();
 	const sphere = useMemo(() => {
-		const positions = new Float32Array(4000 * 3); // 4000 точек, каждая с 3 координатами (x, y, z)
+		const positions = new Float32Array(4000 * 3);
 		random.inSphere(positions, { radius: 2 });
 		return positions;
 	}, []);
 
 	useFrame((state, delta) => {
-		ref.current.rotation.x += delta / 100;
+		ref.current.rotation.x += delta / 200;
 		ref.current.rotation.y += delta / 150;
 	});
 
@@ -21,7 +21,7 @@ const Stars = props => {
 			<Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
 				<PointMaterial
 					transparent
-					color='#f272c8'
+					color='white'
 					size={0.0025}
 					sizeAttenuation={true}
 					depthWrite={false}
