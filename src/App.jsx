@@ -14,15 +14,17 @@ import {
 const App = () => {
 	return (
 		<BrowserRouter>
-			<div className='relative z-0 bg-primary1 bg-gradient-to-r from-grad_clr1 via-grad_clr2 to-grad_clr3'>
-				<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center h-full'>
+			<div className='app-content'>
+				<div className='hero-content'>
 					<Navbar />
 					<Hero />
 				</div>
+
 				<About />
 				<Tech />
 				<Experience />
 				<Projects />
+
 				<div className='relative z-0'>
 					<Contact />
 					<StarsCanvas />

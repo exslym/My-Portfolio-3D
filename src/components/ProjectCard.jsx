@@ -20,46 +20,34 @@ const ProjectCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className='bg-tertiary rounded-2xl xl:max-w-[362px] lg:max-w-[340px] md:max-w-[304px] h-full green-pink-gradient p-px'
+				className='projects-card'
 			>
-				<div className='bg-tertiary w-full h-full rounded-2xl p-4 flex flex-col justify-between'>
+				<div className='projects-card-content'>
 					<div>
-						<div className='relative w-full rounded-2xl '>
-							<img
-								src={image}
-								alt={name}
-								className='w-full h-full sm:max-h-full rounded-[10px] object-cover border-[1px] border-secondary'
-							/>
-							<div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-								<div
+						<div className='projects-card-preview'>
+							<img src={image} alt={name} className='projects-card-image' />
+							<div className='projects-card-buttons'>
+								<button
 									onClick={() => window.open(website_link, '_blank')}
-									className='black-gradient w-9 h-9 rounded-full border border-secondary flex items-center justify-center cursor-pointer mr-2'
+									className='projects-card-button mr-2'
 								>
-									<img
-										src={gotosite}
-										alt={gotosite}
-										className='w-4/5 h-4/5 object-contain'
-									/>
-								</div>
-								<div
+									<img src={gotosite} alt={gotosite} />
+								</button>
+								<button
 									onClick={() => window.open(source_code_link, '_blank')}
-									className='black-gradient w-9 h-9 rounded-full border border-secondary flex items-center justify-center cursor-pointer '
+									className='projects-card-button'
 								>
-									<img
-										src={github}
-										alt={github}
-										className='w-4/5 h-4/5 object-contain'
-									/>
-								</div>
+									<img src={github} alt={github} />
+								</button>
 							</div>
 						</div>
-						<div className='mt-5'>
-							<h3 className='text-white font-bold text-2xl'>{name}</h3>
-							<p className='mt-2 text-secondary text-sm'>{description}</p>
+						<div className='projects-card-text mt-5'>
+							<h3 className='projects-card-header'>{name}</h3>
+							<p className='projects-card-descr'>{description}</p>
 						</div>
 					</div>
 
-					<div className='mt-4 flex flex-wrap gap-2'>
+					<div className='projects-card-tags'>
 						{tags.map(tag => (
 							<p key={tag.name} className={`text-sm ${tag.color}`}>
 								#{tag.name}

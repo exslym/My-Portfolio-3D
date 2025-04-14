@@ -79,8 +79,6 @@ const ComputerCanvas = () => {
 					enableZoom={false}
 					maxPolarAngle={Math.PI / 2.1}
 					minPolarAngle={Math.PI / 2.1}
-					// minAzimuthAngle={-Math.PI * 1.85}
-					// maxAzimuthAngle={Math.PI / 1.75}
 				/>
 
 				<EffectComposer>

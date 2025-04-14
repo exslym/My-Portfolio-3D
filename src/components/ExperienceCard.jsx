@@ -4,43 +4,34 @@ import 'react-vertical-timeline-component/style.min.css';
 const ExperienceCard = ({ experience }) => {
 	return (
 		<VerticalTimelineElement
-			contentStyle={{
-				background: '#0b212d',
-				color: '#fff',
-				boxShadow: 'inset 0 -2px #adbfd0',
-			}}
-			contentArrowStyle={{ borderRight: '7px solid #0b212d' }}
+			className='experience-line'
+			contentArrowStyle={{ borderRight: '8px solid #0b212d' }}
 			date={
-				<div className=' date-desktop'>
+				<div className='date-desktop'>
 					<span className='text-primary'>{experience.date}</span>
 				</div>
 			}
 			iconStyle={{ background: experience.iconBg }}
 			icon={
-				<div className='flex justify-center items-center w-full h-full'>
+				<div className='experience-line-icon'>
 					<img
 						src={experience.icon}
 						alt={experience.company_name}
-						className='w-3/5 h-3/5 object-contain'
+						className='h-3/5 w-3/5 object-contain'
 					/>
 				</div>
 			}
 		>
 			<div>
 				<p className='date-mobile text-primary'>{experience.date}</p>
-				<h3 className='text-white text-2xl font-bold'>{experience.title}</h3>
-				<p
-					className='text-primary text-base font-semibold'
-					style={{ margin: 0 }}
-				>
-					{experience.company_name}
-				</p>
+				<h3 className='experience-line-title'>{experience.title}</h3>
+				<p className='experience-line-subtitle'>{experience.company_name}</p>
 			</div>
-			<ul className='custom-list mt-5 list-disc ml-5 space-y-2'>
+			<ul className='experience-line-list'>
 				{experience.points.map((point, index) => (
 					<li
 						key={`experience-point-${index}`}
-						className='text-white-100 text-sm pl-1 tracking-wider'
+						className='experience-line-item'
 					>
 						{point}
 					</li>

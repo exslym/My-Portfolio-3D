@@ -12,12 +12,9 @@ const About = () => {
 				<h2 className={styles.sectionHeadText}>Overview.</h2>
 			</motion.div>
 
-			<motion.p
-				variants={fadeIn('', '', 0.2, 1)}
-				className='mt-4 text-primary text-base max-w-3xl leading-relaxed'
-			>
+			<motion.p variants={fadeIn('', '', 0.2, 1)} className='about-text'>
 				Experienced and&nbsp;results&#8209;driven Frontend Developer with
-				5&nbsp;years of&nbsp;expertise in&nbsp;JavaScript, TypeScript,
+				5+&nbsp;years of&nbsp;expertise in&nbsp;JavaScript, TypeScript,
 				and&nbsp;advanced libraries like React, NextJS, and&nbsp;ThreeJS.
 				<br />
 				Known for&nbsp;delivering interactive and&nbsp;user&#8209;focused

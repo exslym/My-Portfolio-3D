@@ -96,22 +96,22 @@ let diff = Math.abs(month2 - month1 + 1);
 if (months > 12) {
 	if (years > 1) {
 		if (diff > 1) {
-			duration = `${years} yrs ${diff} mos`;
+			duration = `${years}\u00A0yrs\u00A0${diff}\u00A0mos`;
 		} else {
-			duration = `${years} yrs ${diff} mo`;
+			duration = `${years}\u00A0yrs\u00A0${diff}\u00A0mo`;
 		}
 	} else {
 		if (diff > 1) {
-			duration = `${years} yr ${diff} mos`;
+			duration = `${years}\u00A0yr\u00A0${diff}\u00A0mos`;
 		} else {
-			duration = `${years} yr ${diff} mo`;
+			duration = `${years}\u00A0yr\u00A0${diff}\u00A0mo`;
 		}
 	}
 } else {
 	if (diff > 1) {
-		duration = `${months} mos`;
+		duration = `${months}\u00A0mos`;
 	} else {
-		duration = `${months} mo`;
+		duration = `${months}\u00A0mo`;
 	}
 }
 
@@ -123,7 +123,7 @@ const experiences = [
 		iconBg: '#383E56',
 		date: `September 2024 - Present (${duration})`,
 		points: [
-			'Frontend Development of websites and web applications using leading-edge libraries such as React, Next, and related technologies.',
+			'Frontend Development of websites and web applications using leading\u2011edge libraries such as React, Next, and related technologies.',
 		],
 	},
 	{
@@ -131,13 +131,13 @@ const experiences = [
 		company_name: 'Doctor At Work',
 		icon: doctoratwork,
 		iconBg: '#383E56',
-		date: 'September 2020 - September 2024 (4 yrs)',
+		date: `September 2020 - September 2024 (4\u00A0yrs)`,
 		points: [
 			'Developed and supported over 150 websites and web applications, as well as other visual materials for advertising campaigns using Figma design layouts using React, Next, JavaScript, HTML, CSS.',
 			"Adapted and refined the code of third-party client projects made in React framework, revised for publication on the company's platforms.",
 			'By modernizing layout templates for pharmaceutical advertising projects, I increased the productivity of my team by 25%, which allowed us to implement projects faster and more efficiently.',
-			'Implemented a systematic code review process that reduced the number of errors and reduced project deadlines by 20%, which in turn led to an increase in the profitability of the organization.',
-			'Collaborated with cross-functional teams, including designers, project managers, and other developers to create high-quality products.',
+			'Implemented a systematic code review process that reduced the number of errors and reduced project deadlines by 20%, which in turn led to an\u00A0increase in the profitability of the organization.',
+			'Collaborated with cross\u2011functional teams, including designers, project managers, and other developers to create high\u2011quality products.',
 			'Worked with Vite, Webpack builders, used in projects: JavaScript, React, Next, ThreeJS.',
 		],
 	},
@@ -146,10 +146,10 @@ const experiences = [
 		company_name: 'Freelance | Self-employed',
 		icon: freelance,
 		iconBg: '#383E56',
-		date: 'January 2019 - September 2020  (1 yr 9 mos)',
+		date: 'January 2019 - September 2020  (1\u00A0yr\u00A09\u00A0mos)',
 		points: [
 			'Developed and maintained over 30 websites using JavaScript, React, HTML5, CSS3, SASS/SCSS and other related technologies.',
-			'Implemented responsive adaptive design and ensured cross-browser compatibility.',
+			'Implemented responsive adaptive design and ensured cross\u2011browser compatibility.',
 		],
 	},
 ];
@@ -158,7 +158,7 @@ const projects = [
 	{
 		name: 'Startups Directory',
 		description:
-			'A web application, which is a platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, explore other pitches, and gain exposure through a clean minimalist design for a seamless user experience.',
+			'A web application, which is a platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, explore other pitches, and gain exposure through a\u00A0clean minimalist design for a\u00A0seamless user experience.',
 		tags: [
 			{
 				name: 'typescript',
@@ -184,7 +184,7 @@ const projects = [
 	{
 		name: 'Tldraw Editor',
 		description:
-			'This application offers seamless drawing, shape modification, AI-powered shape recognition, and the ability to save projects to a gallery for future interaction and editing, providing a smooth and user-friendly experience.',
+			'This application offers seamless drawing, shape modification, AI\u2011powered shape recognition, and the ability to save projects to a\u00A0gallery for future interaction and editing, providing a\u00A0smooth and user\u2011friendly experience.',
 		tags: [
 			{
 				name: 'typescript',
@@ -210,7 +210,7 @@ const projects = [
 	{
 		name: 'Eventlify',
 		description:
-			'The events web application stands as a comprehensive, full-stack platform for managing events taking place globally. With this app you have the capability to purchase tickets for any event published there or even initiate and manage your own events.',
+			'The events web application stands as a comprehensive, fullstack platform for managing events taking place globally. With this app you have the capability to purchase tickets for any event published there or even initiate and manage your own events.',
 		tags: [
 			{
 				name: 'typescript',
@@ -236,7 +236,7 @@ const projects = [
 	{
 		name: '3D Tiny World',
 		description:
-			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D-graphics and animations with ThreeJS, React and Tailwind.',
+			'Take a look at my latest 3D portfolio outstanding animated website with levitating island and flying models using 3D\u2011graphics and animations with ThreeJS, React and Tailwind.',
 		tags: [
 			{
 				name: 'javascript',
@@ -262,7 +262,7 @@ const projects = [
 	{
 		name: '3D T-Shirts AI Design',
 		description:
-			'A website project where you can make custom design t-shirts in 3D with the help of AI in real-time. You can also choose color or upload your own images to make your t-shirt truly unique.',
+			'A website project where you can make custom design t\u2011shirts in 3D with the help of AI in real\u2011time. You can also choose color or upload your own images to make your t\u2011shirt truly unique.',
 		tags: [
 			{
 				name: 'javascript',
@@ -288,7 +288,7 @@ const projects = [
 	{
 		name: 'Cryptocurrency Prices',
 		description:
-			'A website version of mobile App created using the Flutter framework. The app provides real-time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
+			'A website version of mobile App created using the Flutter framework. The app provides real\u2011time information about the prices of various cryptocurrencies such as Bitcoin, Ethereum, Litecoin, and many others.',
 		tags: [
 			{
 				name: 'dart',
@@ -336,7 +336,7 @@ const projects = [
 	{
 		name: 'D-Creative Studio',
 		description:
-			'An outstanding animate-on-scroll landing for Creative Studio - a team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
+			'An outstanding animate-on-scroll landing for Creative Studio\u00A0\u2011 a\u00A0team of innovative designers, developers, videographs and artists who specialize in crafting unique and engaging digital experiences for their clients.',
 		tags: [
 			{
 				name: 'javascript',
@@ -388,7 +388,7 @@ const projects = [
 	{
 		name: '2048 [Game]',
 		description:
-			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a value equal to the sum of the two.',
+			'This is a popular puzzle game where the player must combine numbered tiles to reach the ultimate goal of creating a\u00A0tile with the number 2048. When two tiles with the same number collide, they merge into one tile with a\u00A0value equal to the sum of the two.',
 		tags: [
 			{
 				name: 'javascript',

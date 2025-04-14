@@ -56,6 +56,8 @@
 		"autoprefixer": "^10.4.21",
 		"gh-pages": "^6.3.0",
 		"postcss": "^8.5.3",
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
 		"sass": "^1.86.3",
 		"sharp": "^0.34.1",
 		"svgo": "^3.3.2",
