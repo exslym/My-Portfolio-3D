@@ -15,14 +15,14 @@
 	}
 
 	.app-content {
-		@apply from-grad-color-1 via-grad-color-2 to-grad-color-3 relative bg-gradient-to-r;
+		@apply relative bg-gradient-to-r from-grad-color-1 via-grad-color-2 to-grad-color-3;
 	}
 }
 
 @layer components {
 	//* NAVBAR *//
 	.navbar {
-		@apply bg-navbar fixed left-1/2 top-0 z-20 mx-auto flex w-full -translate-x-1/2 items-center text-primary;
+		@apply fixed left-1/2 top-0 z-20 mx-auto flex w-full -translate-x-1/2 items-center bg-navbar text-primary;
 		&-container {
 			@apply mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 sm:px-12 sm:py-5 md:px-16;
 		}
@@ -50,7 +50,7 @@
 		}
 
 		.menu {
-			@apply bg-menu-color absolute right-1/2 top-16 z-10 w-full max-w-menuWidth translate-x-1/2 items-end justify-start rounded-xl p-8;
+			@apply absolute right-1/2 top-16 z-10 w-full max-w-menuWidth translate-x-1/2 items-end justify-start rounded-xl bg-menu-color p-8;
 			&-list {
 				@apply flex w-full list-none flex-col items-start justify-end gap-10;
 				&-item {
@@ -63,29 +63,29 @@
 	//* HERO *//
 	.hero {
 		&-content {
-			@apply bg-hero h-full bg-cover bg-center bg-no-repeat;
+			@apply h-full bg-hero bg-cover bg-center bg-no-repeat;
 		}
 		&-section {
-			@apply relative mx-auto h-svh w-full xs:h-screen;
+			@apply relative mx-auto h-svh w-full;
 		}
 		&-header {
-			@apply absolute inset-0 top-28 mx-auto flex h-max max-w-7xl flex-row items-start gap-3 px-6 xs:gap-4 sm:gap-5 sm:px-12 md:px-16;
+			@apply absolute inset-0 top-24 mx-auto flex h-max max-w-7xl flex-row items-start gap-3 px-6 xs:gap-4 sm:gap-5 sm:px-12 md:px-16;
 			&-pin {
-				@apply ml-2.5 flex flex-col items-center justify-center xs:ml-3.5 sm:ml-3 md:ml-2.5;
+				@apply ml-2.5 flex flex-col items-center justify-center xs:ml-3.5 sm:ml-3;
 			}
 			&-dot {
-				@apply bg-blue-primary h-[0.575rem] w-[0.7rem] rounded-full xs:h-[0.725rem] xs:w-[0.825rem] sm:h-[0.9rem] sm:w-[1.025rem] md:h-[0.9rem] md:w-[1.025rem] lg:h-[1.12rem] lg:w-[1.28rem];
+				@apply h-3 w-3 rounded-full bg-blue-primary sm:h-3.5 sm:w-3.5 md:h-4 md:w-4;
 			}
 			&-line {
-				@apply blue-gradient h-40 w-[2px] xs:h-60 sm:h-60 sm:w-[3px] md:w-[3px] lg:h-80 lg:w-1;
+				@apply blue-gradient h-40 w-[2px] xs:h-52 sm:h-60 sm:w-[3px] md:w-[3px] lg:h-64 lg:w-1;
 			}
 
 			h1 {
-				@apply relative z-10 mt-4 text-4xl font-black text-white xs:text-5xl sm:text-6xl sm:leading-normal lg:text-7xl lg:leading-relaxed;
+				@apply relative z-10 mt-4 text-3xl font-black text-white xs:text-4xl sm:text-5xl sm:leading-normal lg:mt-3 lg:text-6xl lg:leading-snug;
 			}
 
 			p {
-				@apply relative z-10 mt-2 text-[15px] font-medium text-white-100 xs:max-w-md xs:text-xl sm:max-w-xl sm:text-2xl lg:max-w-2xl lg:text-3xl lg:leading-10;
+				@apply relative z-10 mt-2 text-sm font-medium leading-normal text-white-100 xs:max-w-md xs:text-lg sm:text-xl lg:max-w-xl lg:text-2xl lg:leading-normal;
 			}
 		}
 	}

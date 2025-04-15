@@ -27,12 +27,12 @@ module.exports = {
 			},
 			backgroundImage: {
 				hero: 'linear-gradient(to bottom, rgba(222, 178, 255, 0.1) 0%, transparent 95% );',
-				navbar: 'linear-gradient(180deg, #090b18 5%, transparent 90%);',
+				navbar: 'linear-gradient(to bottom, #090b18 5%, transparent 90%);',
 				'grad-black': 'linear-gradient(to right, #434343, #000000)',
 				'grad-blue':
-					'linear-gradient(-90deg, #58d5ff 0%, rgba(60, 51, 80, 0) 100%)',
+					'linear-gradient(to bottom, #58d5ff 0%, rgba(60, 51, 80, 0) 100%)',
 				'grad-green-pink':
-					'linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%)',
+					'linear-gradient(to bottom, #00cea8 1.9%, #bf61ff 97.5%)',
 				'grad-green-text': 'linear-gradient(to top, #11998e, #38ef7d)',
 				'grad-blue-text': 'linear-gradient(to top, #2f80ed, #56ccf2)',
 				'grad-pink-text': 'linear-gradient(to top, #ec008c, #fc6767)',
