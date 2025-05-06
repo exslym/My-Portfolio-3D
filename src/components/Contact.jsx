@@ -6,10 +6,6 @@ import { styles } from '../styles/';
 import { slideIn } from '../utils/motion';
 import { EarthCanvas } from './canvas';
 
-//* for EmailJS (Service ID): service_fffw0th
-//* for EmailJS (Template ID): template_o9xubcg
-//* for EmailJS (Public Key): WajGWXwNs7zQUnPq7
-
 const Contact = () => {
 	const formRef = useRef();
 	const [form, setForm] = useState({
