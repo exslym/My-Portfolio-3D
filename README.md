@@ -1,6 +1,6 @@
-## [My-Portfolio-3D](https://exslym.github.io/My-Portfolio-3D/)
+## [My-Portfolio-3D](https://exslym.github.io/my-portfolio-3d/)
 
-[![preview](https://github.com/exslym/My-Portfolio-3D/blob/main/public/preview.jpg)](https://exslym.github.io/My-Portfolio-3D/)
+[![preview](https://github.com/exslym/my-portfolio-3d/blob/main/public/preview.jpg)](https://exslym.github.io/my-portfolio-3d/)
 
 ### An outstanding and impressive 3D Developer Portfolio website using React, 3D-graphics and animations with ThreeJS and Framer Motion,  and TailwindCSS!
 
