@@ -82,37 +82,74 @@ let date1 = new Date(2024, 8, 10);
 let date2 = new Date();
 let year1 = date1.getFullYear();
 let year2 = date2.getFullYear();
-let month1 = date1.getMonth();
-let month2 = date2.getMonth();
+let month1 = date1.getMonth() + 1;
+let month2 = date2.getMonth() + 1;
 if (month1 === 0) {
 	month1++;
 	month2++;
 }
 let duration;
-let months = (year2 - year1) * 12 + (month2 - month1) + 1;
+let months = (year2 - year1) * 12 + (month2 - month1);
 let years = Math.floor(months / 12);
-let diff = Math.abs(month2 - month1 + 1);
+let diff = Math.abs(month2 - month1);
 
-if (months > 12) {
-	if (years > 1) {
-		if (diff > 1) {
-			duration = `${years}\u00A0yrs\u00A0${diff}\u00A0mos`;
-		} else {
-			duration = `${years}\u00A0yrs\u00A0${diff}\u00A0mo`;
+let option1 = `(${years}\u00A0yr\u00A0${diff}\u00A0mos)`;
+let option2 = `(${years}\u00A0yr\u00A0${diff}\u00A0mo)`;
+let option3 = `(${years}\u00A0yr)`;
+let option4 = `(${years}\u00A0yrs\u00A0${diff}\u00A0mos)`;
+let option5 = `(${years}\u00A0yrs\u00A0${diff}\u00A0mo)`;
+let option6 = `(${years}\u00A0yrs)`;
+let option7 = `(${months}\u00A0mos)`;
+let option8 = `(${months}\u00A0mo)`;
+
+switch (true) {
+	case months >= 12:
+		switch (true) {
+			case years === 1:
+				switch (true) {
+					case diff > 1:
+						duration = option1;
+						break;
+					case diff === 1:
+						duration = option2;
+						break;
+					default:
+						duration = option3;
+				}
+				break;
+			case years > 1:
+				switch (true) {
+					case diff > 1:
+						duration = option4;
+						break;
+					case diff === 1:
+						duration = option5;
+						break;
+					default:
+						duration = option6;
+				}
+				break;
+			default:
+				switch (true) {
+					case diff > 1:
+						duration = option1;
+						break;
+					default:
+						duration = option2;
+				}
 		}
-	} else {
-		if (diff > 1) {
-			duration = `${years}\u00A0yr\u00A0${diff}\u00A0mos`;
-		} else {
-			duration = `${years}\u00A0yr\u00A0${diff}\u00A0mo`;
+		break;
+	case months === 0:
+		duration = '';
+		break;
+	default:
+		switch (true) {
+			case months > 1:
+				duration = option7;
+				break;
+			default:
+				duration = option8;
 		}
-	}
-} else {
-	if (diff > 1) {
-		duration = `${months}\u00A0mos`;
-	} else {
-		duration = `${months}\u00A0mo`;
-	}
 }
 
 const experiences = [
@@ -121,7 +158,7 @@ const experiences = [
 		company_name: 'Freelance | Self-employed',
 		icon: freelance,
 		iconBg: '#383E56',
-		date: `September 2024 - Present (${duration})`,
+		date: `September 2024 - Present ${duration}`,
 		points: [
 			'Frontend Development of websites and web applications using leading\u2011edge libraries such as React, Next, and related technologies.',
 		],
