@@ -10,6 +10,7 @@ const Navbar = () => {
 		<nav className='navbar'>
 			<div className='navbar-container'>
 				<button
+					type='button'
 					className='navbar-logo'
 					onClick={() => {
 						setActive('');
