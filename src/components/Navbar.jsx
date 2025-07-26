@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { close, logo, menu } from '../assets';
 import { navLinks } from '../constants';
 
@@ -10,8 +9,7 @@ const Navbar = () => {
 	return (
 		<nav className='navbar'>
 			<div className='navbar-container'>
-				<Link
-					to='/'
+				<button
 					className='navbar-logo'
 					onClick={() => {
 						setActive('');
@@ -20,7 +18,8 @@ const Navbar = () => {
 				>
 					<img src={logo} alt='logo' />
 					<p>Andrés</p>
-				</Link>
+				</button>
+
 				<ul className='navbar-links'>
 					{navLinks.map(link => (
 						<li

@@ -63,7 +63,7 @@ const DEFAULT_OPTIONS = {
 export default defineConfig({
 	root: Path.resolve(__dirname, './src'),
 	publicDir: '../public',
-	base: '/my-portfolio-3d/',
+	base: './',
 
 	build: {
 		emptyOutDir: true,

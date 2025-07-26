@@ -32,7 +32,12 @@
 				@apply mr-1 h-8 w-8 rounded-full object-contain xs:h-10 xs:w-10;
 			}
 			p {
-				@apply flex cursor-pointer text-lg font-bold text-white hover:text-primary;
+				@apply flex cursor-pointer text-lg font-bold text-white;
+			}
+			&:hover {
+				p {
+					@apply text-primary;
+				}
 			}
 		}
 		&-links {
