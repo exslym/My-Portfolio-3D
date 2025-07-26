@@ -19,9 +19,7 @@ const Navbar = () => {
 					}}
 				>
 					<img src={logo} alt='logo' />
-					<p>
-						Andrés&ensp;<span className='hidden sm:block'>Chiplujin</span>
-					</p>
+					<p>Andrés</p>
 				</Link>
 				<ul className='navbar-links'>
 					{navLinks.map(link => (

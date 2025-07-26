@@ -14,7 +14,7 @@ const About = () => {
 
 			<motion.p variants={fadeIn('', '', 0.2, 1)} className='about-text'>
 				Experienced and&nbsp;results&#8209;driven Frontend Developer with
-				5+&nbsp;years of&nbsp;expertise in&nbsp;JavaScript, TypeScript,
+				6+&nbsp;years of&nbsp;expertise in&nbsp;JavaScript, TypeScript,
 				and&nbsp;advanced libraries like React, NextJS, and&nbsp;ThreeJS.
 				<br />
 				Known for&nbsp;delivering interactive and&nbsp;user&#8209;focused

@@ -1,5 +1,5 @@
 {
-	"name": "portfolio-3d",
+	"name": "my-portfolio-3d",
 	"private": true,
 	"version": "1.0.0",
 	"type": "module",
@@ -15,13 +15,13 @@
 		"vite-plugin-image-optimizer"
 	],
 	"author": "exslym",
-	"homepage": "https://github.com/exslym/My-Portfolio-3D/#",
+	"homepage": "https://exslym.github.io/my-portfolio-3d/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/exslym/My-Portfolio-3D.git"
+		"url": "https://github.com/exslym/my-portfolio-3d.git"
 	},
 	"bugs": {
-		"url": "https://github.com/exslym/My-Portfolio-3D/issues"
+		"url": "https://github.com/exslym/my-portfolio-3d/issues"
 	},
 	"browserslist": [
 		"cover 99.5%"
